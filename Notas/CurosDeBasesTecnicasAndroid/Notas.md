@@ -1,5 +1,13 @@
 # Notas de Bases Técnicas de Andorid 
 
+## Clase 10 .
+
+Broadcast Receivers (Receptores de Transmisiones)
+
+![src/brodcast.png](src/brodcast.png)
+
+Siempre estan al pendiente de lo que pase en el Sistema Operativo.
+
 ## Clase 13 . Qué es y como funciona Gradle.
 Grade es un sistema integrado a Andorid y desarrollado por google que permite integrar dependencias, crear un sistema de archivos y generar un ejecutable  APK
 Gradle es un sistema de compilación que reune en un uno solo las mejores prestaciones de otros sistemas de compilación. Está basado en JVM (Java Virtual Machine), lo que          significa que puedes escribir tu propio script en java, y que Android Studio lo entenderá y lo usará.
@@ -195,7 +203,7 @@ Pruebas de interfaz de usuario
 
 **Las pruebas de interfaz de usuario** son totalmente enfocadas en el flujo de la interfaz de usuario, con esto nos aseguramos que las tareas que debe realizar el usuario en la aplicación funcionen como se espera.
 
-Android Studio te ayudará a llevar los procesos de Testing que requieren tus apps, posee herramientas que nos ayudan a lograr esto. Investiga productos, frameworks, etc. que te ayudan a ejecutar cualquiera de los tipos de pruebas que vimos hace un momento, compartelos en la sección de comentarios.
+
 
 ## 26 Tienda de Aplicaciones Android
 
