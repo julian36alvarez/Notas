@@ -187,7 +187,7 @@ Pruebas instrumentadas
 Pruebas de interfaz de usuario
 Éstas se pueden ver ubicadas en la siguiente pirámide desde la base hasta la punta:
 
-![src/androidprov.png](src/andoridPruebas.png)
+![src/androidprov.png](src/androidprov.png)
 
 **Las pruebas de unidad local** son test pequeños que a medida que vas generando código lo vas probando rápidamente en tu computadora. También puedes programar código automatizado que ejecute una prueba.
 
