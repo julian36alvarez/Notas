@@ -35,26 +35,47 @@ Cuando queremos trabajar una aplicacion o integrar servicios de google debemos t
  servicios de Google que tienes disponible para integrar a tus proyectos Android como librerías:
  API	BIBLIOTECA
     **Google+:**	com.google.android.gms:play-services-plus:15.0.0
+    
     **Google Account Login:**	com.google.android.gms:play-services-auth:15.0.0
+    
     **Google Actions, Base Client Library:**	com.google.and roid.gms: play-services-base:15.0.0
+    
     **Google Sign In:**	com.google.android.gms:play-services-identity:15.0.0
+    
     **Google Analytics:**	com.google.android.gms:play-services-analytics:15.0.0
+    
     **Google Awareness:**	com.google.android.gms:play-services-awareness:15.0.0
+  
     **Google Cast:**	com.google.android.gms:play-services-cast:15.0.0
+  
     **Google Cloud Messaging:**	com.google.android.gms:play-services-gcm:15.0.0
+  
     **Google Drive:**	com.google.android.gms:play-services-drive:15.0.0
+  
     **Google Fit:**	com.google.android.gms:play-services-fitness:15.0.0
+  
     **Google Location and Activity Recognition:**	com.google.android.gms:play-services-location:15.0.0
+  
     **Google Maps:**	com.google.android.gms:play-services-maps:15.0.0
+  
     **Google Mobile Ads:**	com.google.android.gms:play-services-ads:15.0.0
+  
     **Google Places:**	com.google.android.gms:play-services-places:15.0.0
+  
     **Mobile Vision:**	com.google.android.gms:play-services-vision:15.0.0
+  
     **Google Nearby:**	com.google.android.gms:play-services-nearby:15.0.0
+  
     **Google Panorama Viewer:**	com.google.android.gms:play-services-panorama:15.0.0
+  
     **Google Play Game Services:**	com.google.android.gms:play-services-games:15.0.0
+  
     **SafetyNet:**	com.google.android.gms:play-services-safetynet :15.0.0
+  
     **Android Pay:**	com.google.android.gms:play-services-wallet :15.0.0
+  
     **Wear OS by Google:**	com.google.android.gms:play-services-wearable:15 .0.0
+  
     
     https://developers.google.com/android/guides/setup
     
