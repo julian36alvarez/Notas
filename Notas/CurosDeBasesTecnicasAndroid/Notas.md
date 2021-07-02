@@ -122,7 +122,7 @@ Tipos de Almacenamiento.
  3. **Bases de Datos**. Relaciones entre datos vivien dentro del APK en el celular o en el FILE por ejemplo Whats APP
  4. Web Service, el nivel de persistencia trasciende, se envía a bases de datos en la nube, este tipo de almacenamiento requiere una conexión a internet.
 
-##23. File y SharedPreferences.
+## 23. File y SharedPreferences.
 **File**
 
     private File getTempFile(Context context, String url) {
@@ -156,7 +156,7 @@ Se trabaja con la clase file en Java/kotlin. Modo Nativo    Este es el permiso p
  
  El archivo XML vivira dentro de la aplicación.
  
-### 23. Content Providers Bases de Datos y Network.
+## 24. Content Providers Bases de Datos y Network.
  
 Para trabajar con datos estructurados, complejos y relacionales. Se almacenan dentro del dispositivo, pero se puede almacenar externamente. Aunque, puede que la información se vea vulnerable. Por lo que, los datos se deben encriptar para proteger la información.
 
@@ -177,7 +177,7 @@ No requieren de conexión a internet. ejemplo aplicaciones de contactos.
 
 Los servidores deben estar siempre online para que los datos estén disponibles. Para ello, se puede usar plataformas Cloud. Por ej. Azure, Amazon Web Service, Firebase, etc.
 
-###25 Tipos de Testing en Android y UI Test
+## 25 Tipos de Testing en Android y UI Test
 
 Llevar un proceso de Testing en nuestras aplicaciones debe ser un proceso rigurosamente obligatorio, testear tus aplicaciones hará tus usuarios reciban mayor calidad en el producto que les estás proporcionando.
 Existen algunos tipos de pruebas que podemos ir ejecutando progresivamente a nuestras apps.
