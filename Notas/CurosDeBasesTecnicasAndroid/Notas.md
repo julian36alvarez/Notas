@@ -89,9 +89,90 @@ Otro sitio muy interesante es https://dribbble.com/ el cual es muy conocido por 
 ![src/Android6-91b94789-ebf1-4784-bc2f-f6ef724ab7c2.webp](src/Android6-91b94789-ebf1-4784-bc2f-f6ef724ab7c2.webp)
 
 
+### 20. Flutter la nueva forma de hacer interfaces en Android y iOS.
+
+https://flutter.dev/
+
+Flutter es el nuevo SDK de Google creado para diseñar interfaces nativas iOS y Android. Utiliza el lenguaje de programación Dart y fue creado para programadores de interfaces móviles. Esto es el comienzo de lo porvenir en lo que será el frontend mobile.
+
+### 21. Consideraciones para trabajar con Hardware en Android
+
+Podemos acceder a todo el hardware del los dispositivos
+
+SDK es el acrónimo de “Software Development Kit” (Kit de desarrollo de software). El SDK reúne un grupo de herramientas que permiten la programación de aplicaciones móviles.
+
+Este conjunto de herramientas se puede dividir en 3 categorías:
+SDK para entornos de programación o sistemas operativos (iOS, Android, etc.)
+SDK para el mantenimiento de aplicaciones
+SDK de marketing y publicidad
+
+### 22. Niveles de Almacenamiento y tipos.
+
+Alamacenamiento, simpre es inherente a persistir la información
+
+Tipos de Almacenamiento.
+
+**Almacenamiento Interno:** Memoria interna
+**Almacenamiento Externo:** Memorias SD Card
+
+####Formas de Persistir la informacion.
+
+ 1. Archivos que existen en el dispositivo Clase **File** puede vivir en la memoria interna o externa.
+ 2. **SharedPreferences** Archivo xml que vive en donde se encuentra la app movil, es devir vivie en el APK de la app. el apk es un tipo de compresion para la interpretacion de andriod. Dato Clave valor
+ 3. **Bases de Datos**. Relaciones entre datos vivien dentro del APK en el celular o en el FILE por ejemplo Whats APP
+ 4. Web Service, el nivel de persistencia trasciende, se envía a bases de datos en la nube, este tipo de almacenamiento requiere una conexión a internet.
+
+### 23. File y SharedPreferences.
+**File**
+
+    private File getTempFile(Context context, String url) {
+    File file;
+    try {
+      String fileName = Uri.parse(url).getLastPathSegment();
+      file = File.createTempFile(fileName, null, context.getCacheDir());
+    } catch(IOException e) {}
+    return file;
+    }
+Se trabaja con la clase file en Java/kotlin. Modo Nativo    Este es el permiso para leer y escribir memoria SD
+
+    <manifest ...>
+      <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+      <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+      ...
+    </manifest>
+
+**SharedPreferences**
+  Utiliza una estructura .XML en forma de pares KEY:VALUE.
+  El archivo se guarda en la carpeta shared_pref, dentro de la .apk.
+  Se usan mucho para registrar preferencias de los usuarios como los colores, temas, scores, etc.
+  Como definirlas:
+  
+    SharedPreferences pref = getSharedPreferences("MisPreferencias",Context.MODE_PRIVATE);
+
+    SharedPreferences.Editor editor = pref.edit();
+    editor.putString("email","cajotafer@gmail.com");
+    editor.pitString("nombre", "Carlos");
+    editor.commit();
+ 
+ El archivo XML vivira dentro de la aplicación.
+ 
+ ### 23. Content Providers Bases de Datos y Network.
+ 
+Para trabajar con datos estructurados, complejos y relacionales. Se almacenan dentro del dispositivo, pero se puede almacenar externamente. Aunque, puede que la información se vea vulnerable. Por lo que, los datos se deben encriptar para proteger la información.
+
+**SQLite:** es un motor de base de datos que emplea Android. En la cual, las aplicaciones pueden guardar su información con las preferencias de los usuarios con data más extensa, a comparación de Shared Preferences.
+Los datos viven, mientras la aplicación viva. En caso, se desinstale la app, lo datos se perderán.
+
+![src/androidsql.png](src/androidsql.png)
 
 
+**Content Provider (Proveedor de Contenido):** Permite acceder a las bases de datos de otras aplicaciones que estén proveendo contenido. Ej. Consumir datos de los contactos del teléfono. las bases de datos vivien dentro de android.
+No requieren de conexión a internet. ejemplo aplicaciones de contactos.
 
+![src/androidprov.png](src/androidprov.png)
 
+**Web Service:** Los datos se pueden almacenar también en una base de datos que se encuentra en alguna parte de internet. Antes, es necesario identificar si el dispositivo puede acceder a internet. Además, podemos crear validaciones para limitar la cantidad de datos a consumir. Permite, trabajar con aplicaciones off-line.
 
+![src/androidprov.png](src/andoridWS.png)
 
+Los servidores deben estar siempre online para que los datos estén disponibles. Para ello, se puede usar plataformas Cloud. Por ej. Azure, Amazon Web Service, Firebase, etc.
