@@ -6,7 +6,7 @@ Gradle es un sistema de compilación que reune en un uno solo las mejores presta
 
 ![src/gradle.png](src/gradle.png)
 
-### Clase 14 Generación de un apk en Android.
+## Clase 14 Generación de un apk en Android.
 
 APK es la extensión de los archivos ejecutables en Android su significado es application package, generarlo tiene un proceso interesante y se lleva a cabo bajo un proceso de compilación.
 
@@ -23,14 +23,14 @@ APK es la extensión de los archivos ejecutables en Android su significado es ap
 ![src/apkAndorid2.png](src/apkAndorid2.png)
 
 
-### Clase 15 Google Play Services.
+## Clase 15 Google Play Services.
 
 Cuando queremos trabajar una aplicacion o integrar servicios de google debemos trabajar con estas librerias. por ejemplo login con google. 
 
   1. Instalar el .apk de Google Play Services.
   2. Incluir la librería del servicio que vayas a usar.
 
-### Clase 16 Google Play Services.
+## Clase 16 Google Play Services.
 
  servicios de Google que tienes disponible para integrar a tus proyectos Android como librerías:
  API	BIBLIOTECA.
@@ -60,7 +60,7 @@ Cuando queremos trabajar una aplicacion o integrar servicios de google debemos t
     https://developers.google.com/android/guides/setup
     
     
-### 17. Lenguajes para programar en Android.
+## 17. Lenguajes para programar en Android.
 
   1. JAVA Y XML
   2. KOTLIN tambien necesita xml par ala parte gráfica: Adoptado por Google es el oficial Java tiene muchos problemas porque se escribe mas codigo y es un lengiaje muy facil.
@@ -72,7 +72,7 @@ Cuando queremos trabajar una aplicacion o integrar servicios de google debemos t
 ![src/lenguajes.png](src/lenguajes.png)
 
 
-### 18. Qué es Material Design
+## 18. Qué es Material Design
 
 Material Design son las métricas de diseño de aplicaciones fueron construidas por Google y traídas a Android a partir de la versión 5.0 Lollipop.
 Específicamente lo que se introdujo es un tema nuevo, nuevos widgets y nuevas API’s de desarrollo.
@@ -84,18 +84,18 @@ Si quieres conocer más sobre Material Design puedes ir al sitio oficial https:/
 
 Otro sitio muy interesante es https://dribbble.com/ el cual es muy conocido por ser la red social de diseñadores ahí encontrarás un gran catálogo de diseños de interfaces, ejecuta un par de búsquedas y muéstranos con un screenshot la que crees que más se apega a las métricas de Material Design.
 
-### 19. Widgets de interfaz gráfica.
+## 19. Widgets de interfaz gráfica.
 
 ![src/Android6-91b94789-ebf1-4784-bc2f-f6ef724ab7c2.webp](src/Android6-91b94789-ebf1-4784-bc2f-f6ef724ab7c2.webp)
 
 
-### 20. Flutter la nueva forma de hacer interfaces en Android y iOS.
+## 20. Flutter la nueva forma de hacer interfaces en Android y iOS.
 
 https://flutter.dev/
 
 Flutter es el nuevo SDK de Google creado para diseñar interfaces nativas iOS y Android. Utiliza el lenguaje de programación Dart y fue creado para programadores de interfaces móviles. Esto es el comienzo de lo porvenir en lo que será el frontend mobile.
 
-### 21. Consideraciones para trabajar con Hardware en Android
+## 21. Consideraciones para trabajar con Hardware en Android
 
 Podemos acceder a todo el hardware del los dispositivos
 
@@ -106,7 +106,7 @@ SDK para entornos de programación o sistemas operativos (iOS, Android, etc.)
 SDK para el mantenimiento de aplicaciones
 SDK de marketing y publicidad
 
-### 22. Niveles de Almacenamiento y tipos.
+## 22. Niveles de Almacenamiento y tipos.
 
 Alamacenamiento, simpre es inherente a persistir la información
 
@@ -115,14 +115,14 @@ Tipos de Almacenamiento.
 **Almacenamiento Interno:** Memoria interna
 **Almacenamiento Externo:** Memorias SD Card
 
-####Formas de Persistir la informacion.
+##Formas de Persistir la informacion.
 
  1. Archivos que existen en el dispositivo Clase **File** puede vivir en la memoria interna o externa.
  2. **SharedPreferences** Archivo xml que vive en donde se encuentra la app movil, es devir vivie en el APK de la app. el apk es un tipo de compresion para la interpretacion de andriod. Dato Clave valor
  3. **Bases de Datos**. Relaciones entre datos vivien dentro del APK en el celular o en el FILE por ejemplo Whats APP
  4. Web Service, el nivel de persistencia trasciende, se envía a bases de datos en la nube, este tipo de almacenamiento requiere una conexión a internet.
 
-### 23. File y SharedPreferences.
+##23. File y SharedPreferences.
 **File**
 
     private File getTempFile(Context context, String url) {
@@ -156,7 +156,7 @@ Se trabaja con la clase file en Java/kotlin. Modo Nativo    Este es el permiso p
  
  El archivo XML vivira dentro de la aplicación.
  
- ### 23. Content Providers Bases de Datos y Network.
+### 23. Content Providers Bases de Datos y Network.
  
 Para trabajar con datos estructurados, complejos y relacionales. Se almacenan dentro del dispositivo, pero se puede almacenar externamente. Aunque, puede que la información se vea vulnerable. Por lo que, los datos se deben encriptar para proteger la información.
 
@@ -176,3 +176,38 @@ No requieren de conexión a internet. ejemplo aplicaciones de contactos.
 ![src/androidprov.png](src/andoridWS.png)
 
 Los servidores deben estar siempre online para que los datos estén disponibles. Para ello, se puede usar plataformas Cloud. Por ej. Azure, Amazon Web Service, Firebase, etc.
+
+###25 Tipos de Testing en Android y UI Test
+
+Llevar un proceso de Testing en nuestras aplicaciones debe ser un proceso rigurosamente obligatorio, testear tus aplicaciones hará tus usuarios reciban mayor calidad en el producto que les estás proporcionando.
+Existen algunos tipos de pruebas que podemos ir ejecutando progresivamente a nuestras apps.
+
+Pruebas de unidad local
+Pruebas instrumentadas
+Pruebas de interfaz de usuario
+Éstas se pueden ver ubicadas en la siguiente pirámide desde la base hasta la punta:
+
+![src/androidprov.png](src/andoridPruebas.png)
+
+**Las pruebas de unidad local** son test pequeños que a medida que vas generando código lo vas probando rápidamente en tu computadora. También puedes programar código automatizado que ejecute una prueba.
+
+**Las pruebas de instrumentación** principalmente las deberás ejecutar en el dispositivo y son básicamente pruebas donde integras los test anteriores a fin de que módulo a módulo la aplicación se vaya comportando adecuadamente, aquí testeamos que los módulos, servicios, etc. funcionen en conjunto.
+
+**Las pruebas de interfaz de usuario** son totalmente enfocadas en el flujo de la interfaz de usuario, con esto nos aseguramos que las tareas que debe realizar el usuario en la aplicación funcionen como se espera.
+
+Android Studio te ayudará a llevar los procesos de Testing que requieren tus apps, posee herramientas que nos ayudan a lograr esto. Investiga productos, frameworks, etc. que te ayudan a ejecutar cualquiera de los tipos de pruebas que vimos hace un momento, compartelos en la sección de comentarios.
+
+## 26 Tienda de Aplicaciones Android
+
+Google Play Store es la tienda oficial de aplicaciones android, en ella encontrarás todo el catálogo de aplicaciones que puedes instalar en tu dispositivo.
+
+Como desarrollador móvil te interesará entrar y dejar disponibles tus aplicaciones para que todo el mundo pueda conocer tu trabajo. El único requisito para lograr esto es obtener una cuenta de desarrollador de Google Play. Para ello deberás:
+
+  1. Registrarte en este enlace https://play.google.com/apps/publish/signup/
+  2. Aceptar el acuerdo de distribución para desarrolladores, lo puedes consultar aquí: https://play.google.com/about/developer-distribution-agreement.html
+  3. Pagar la única tarifa de registro de $25 USD al día de hoy.
+  4. Completar los datos de la cuenta.
+
+Una vez hecho esto te dará acceso al Google Play Console (https://play.google.com/apps/publish/?account=7750131643547052717#AppListPlace) y estarás listo para publicar tus aplicaciones.
+
+En la Google Play Console podrás administrar todas las fases de publicación de tu app, además de probar y recopilar datos antes de lanzar o incluso una vez que ya lo hiciste, puedes asignar precios y manejar informes de ventas, ver y administrar comentarios de tus usuarios, tener estadísticos y datos para entender y mejorar la estabilidad de tu producto. Todo esto ofrece la consola de Google Play entre muchas otras cosas más.
