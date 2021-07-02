@@ -60,6 +60,29 @@ Cuando queremos trabajar una aplicacion o integrar servicios de google debemos t
     https://developers.google.com/android/guides/setup
     
     
-### Clase 16 Google Play Services.
+### 17. Lenguajes para programar en Android.
+
+  1. JAVA Y XML
+  2. KOTLIN tambien necesita xml par ala parte gráfica: Adoptado por Google es el oficial Java tiene muchos problemas porque se escribe mas codigo y es un lengiaje muy facil.
+  3. Opciones Híbridas Javascript ReatNative no ahorramos el codigo XML, usariamos html css y js para el front. 
+  4. Ionic - Enteramente html ccs y js es una composicion hibrida, seria un web view ajustado a una aplicacion nativa, una pagina web dentro de un web view.
+  5. Xamarin Forms, Es un stak constituido en C# es mi Microsoft y permite generar apps en apps para mac.
+
+
+![src/lenguajes.png](src/lenguajes.png)
+
+
+### 18. Qué es Material Design
+
+Material Design son las métricas de diseño de aplicaciones fueron construidas por Google y traídas a Android a partir de la versión 5.0 Lollipop.
+Específicamente lo que se introdujo es un tema nuevo, nuevos widgets y nuevas API’s de desarrollo.
+Un tema nuevo que ofrece dos versiones obscuro y claro, que es dependiendo del tema que le quieras dar a tu proyecto.
+
+Material Design está basado en el manejo real y físico de materiales, como son especialmente hojas de papel, además que este, permite jugar con las sombras para crear efectos tridimensionales, la integración de animaciones es tan realista que se comportarán de acuerdo a las leyes de la física, por lo tanto para general esto último tenemos API’s de desarrollo que se integraron para trabajar con efectos y animaciones que hagan más interactivo el diseño.
+
+Si quieres conocer más sobre Material Design puedes ir al sitio oficial https://material.io/
+
+Otro sitio muy interesante es https://dribbble.com/ el cual es muy conocido por ser la red social de diseñadores ahí encontrarás un gran catálogo de diseños de interfaces, ejecuta un par de búsquedas y muéstranos con un screenshot la que crees que más se apega a las métricas de Material Design.
+
 
     
