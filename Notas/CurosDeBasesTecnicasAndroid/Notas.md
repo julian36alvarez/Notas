@@ -84,5 +84,14 @@ Si quieres conocer más sobre Material Design puedes ir al sitio oficial https:/
 
 Otro sitio muy interesante es https://dribbble.com/ el cual es muy conocido por ser la red social de diseñadores ahí encontrarás un gran catálogo de diseños de interfaces, ejecuta un par de búsquedas y muéstranos con un screenshot la que crees que más se apega a las métricas de Material Design.
 
+### 19. Widgets de interfaz gráfica.
 
-    
+![src/Android6-91b94789-ebf1-4784-bc2f-f6ef724ab7c2.webp](src/Android6-91b94789-ebf1-4784-bc2f-f6ef724ab7c2.webp)
+
+
+
+
+
+
+
+
