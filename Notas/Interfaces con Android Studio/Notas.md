@@ -66,10 +66,49 @@ para poder referenciar el Layaut creado vamos a nuestro MainActivity:
 
 ![image](https://user-images.githubusercontent.com/31891276/124341639-619fe680-db83-11eb-9ab5-6a9cbc516500.png)
 
+De esta forma podemos llamar nuestro componentes al MainActivity.
 
+## 6. ViewGroup y View: Diferencias básicas
 
+![image](https://user-images.githubusercontent.com/31891276/124341716-01f60b00-db84-11eb-9262-cae64a718a40.png)
 
+View: es un elemento que se va a mostrar por pantalla así como tal.
 
+  1. TextView.
+  2. ImageView.
+  3. EditText.
 
+ViewGroup: es un elemento que sirve para agrupar elementos. Nota: cuando tenemos un grupo de elementos dentro de un ViewGroup, los cambios que hagamos sobre este afectaran los elementos dentro de el.
 
+    <LinearLayout android:gravity="start"
+      <TextView />
+      <ImageView />
+      <EditText />
+    </LinearLayout>
 
+Los Views son inline elements
+![image](https://user-images.githubusercontent.com/31891276/124341884-64034000-db85-11eb-9284-d72f0fdccf1d.png)
+
+Los ViewsGroup son elementos agrupado dentro de una pantalla. tienen afectacion directa sobre todos sus elementos cuando hay afectaciones.
+
+![image](https://user-images.githubusercontent.com/31891276/124341919-a462be00-db85-11eb-8366-1541c543fcde.png)
+
+## 7. Atributos importantes: alto, ancho y id
+
+Este atributo  ocupa el ancho segun el ancho del texto
+
+    android:layout_height="match_parent"
+
+Este atributo usa toda la pantalla 
+
+![image](https://user-images.githubusercontent.com/31891276/124366166-4c729880-dc13-11eb-8bbe-90ad49d276eb.png)
+
+![image](https://user-images.githubusercontent.com/31891276/124366140-0d444780-dc13-11eb-90c5-6750d67b21de.png)
+
+Atributos importantes: alto, ancho y id
+
+**Width y Height**: Nos permiten definir como un elemento se va a distribuir con respecto a su contenido.
+**Wrap content:** Hacer que crezca tanto como el contenido lo requiera.
+**Match parent:** Hará que el elemento ocupe toda la pantalla.
+**Hint:** Sugerencia para ingresar texto
+**Background:** Utilizar una imagen o color de fondo. Para acceder a los colores del archivo se inicia con @<archivo>/<color>.
