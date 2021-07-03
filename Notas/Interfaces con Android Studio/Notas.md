@@ -1,6 +1,8 @@
 # Clases del Curso Básico de Diseño de Interfaces con Android Studio
 
-## 1 UI en Android: ¿Por qué? ¿Cómo?
+![image](https://user-images.githubusercontent.com/31891276/124339808-8b064580-db76-11eb-8822-c3beedecf628.png)
+
+## 1. UI en Android: ¿Por qué? ¿Cómo?
 
 **XML: ** XML(eXtensible Markup Language):
 es un lenguaje de etiquetas, es decir, cada paquete de información está delimitado por dos etiquetas/tags
@@ -11,3 +13,63 @@ Un namespace es una forma de darle contexto a un tag. Nos ayuda a entender dónd
 Los namespace provienen xmlns (xml namespace) donde vamos a darle una url de dónde un xml tiene su procedencia. De esta manera xml va a poder entender cuando tiene o no tiene un contexto y cuando puede darle o asignarle un comportamiento
 
 ![image](https://user-images.githubusercontent.com/31891276/124339751-277c1800-db76-11eb-8544-7f2d9de8ce77.png)
+
+## 2. Instalando Android Studio
+
+https://developer.android.com/studio
+
+## 3. Enlazando nuestro layout con el código.
+
+**Estructura de res:**
+
+drawable: Representa gráficos (Todo aquello que pueda ser dibujado en una pantalla).
+layout: Representa todas las estructuras de pantallas que creemos.
+mipmap: Aquí guardaremos iconos.
+values: Aquí administraremos los recursos (Colores, cadenas, dimensiones o arreglos).
+
+Recursos más complejos:
+
+font: Aquí guardaremos las fuentes de la aplicación.
+anim: Contendrá xml para animaciones.
+xml: Contendrá preferencias de usuario y datos más complejos.
+raw: Contendrá archivos como vídeos o audios.
+
+![image](https://user-images.githubusercontent.com/31891276/124340966-b5f49780-db7e-11eb-9ccc-829fc784268a.png)
+
+Crear el archivo Dimens.xml es una buena practica para setear dimensiones 
+![image](https://user-images.githubusercontent.com/31891276/124341012-023fd780-db7f-11eb-84f6-cc6bbb7ec4f2.png)
+
+## 4. La vista de diseño en Android Studio
+
+Layout
+
+![image](https://user-images.githubusercontent.com/31891276/124341331-27354a00-db81-11eb-95b8-ff426b735060.png)
+
+Seleccionat Vista de diseño
+
+![image](https://user-images.githubusercontent.com/31891276/124341350-492ecc80-db81-11eb-936f-d235bc9c6701.png)
+
+![image](https://user-images.githubusercontent.com/31891276/124341522-85aef800-db82-11eb-835e-db14af4abbcb.png)
+
+Anidacion 
+
+![image](https://user-images.githubusercontent.com/31891276/124341508-729c2800-db82-11eb-9efd-6fd55445d9bc.png)
+
+
+## 5. La vista de texto en Android Studio
+
+![image](https://user-images.githubusercontent.com/31891276/124341564-d888af80-db82-11eb-8119-8360ffd1a614.png)
+
+![image](https://user-images.githubusercontent.com/31891276/124341597-1685d380-db83-11eb-9452-32674a733e93.png)
+
+para poder referenciar el Layaut creado vamos a nuestro MainActivity:
+
+![image](https://user-images.githubusercontent.com/31891276/124341639-619fe680-db83-11eb-9ab5-6a9cbc516500.png)
+
+
+
+
+
+
+
+
