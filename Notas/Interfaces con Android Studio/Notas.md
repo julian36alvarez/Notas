@@ -119,4 +119,22 @@ Atributos importantes: alto, ancho y id
 
 **Background:** Utilizar una imagen o color de fondo. Para acceder a los colores del archivo se inicia con @<archivo>/<color>.
   
+## 8 Otros atributos y el namespace tools
   
+**android:id**
+
+Cualquier objeto View puede tener un ID entero asociado para identificarse de forma única dentro del árbol.
+Cuando se compila la aplicación, se hace referencia a este ID como un número entero, pero el ID se asigna normalmente en el archivo XML de diseño como una string del atributo id.
+Este es un atributo XML común para todos los objetos View (definido por la clase View) y lo utilizarás muy a menudo.
+La sintaxis de un ID dentro de una etiqueta XML es la siguiente:  android:id="@+id/my_button"
+
+**Atributos específicos y atributos compartidos**
+  
+Existen atributos compartidos y otros específicos para cada elemento.
+Por ejemplo, el atributo android:background, que nos permite establecer un color, es un atributo que existe para todos los elementos de android; el atributo android:hint="Enter password" es un atributo especifico de la View EditText
+
+**Namespace tools**
+Si en algún momento no quieres utilizar un atributo especifico y quieres solamente utilizarlo en tiempo de diseño para poder ver como se vería, existe un namespace denominado tools.
+Es un namespace que nos permite ver en tiempo de diseño como se verá nuestra aplicación sin generar una versione final de la aplicación con esos valores.
+
+Por ejemplo, si se establece el valor del atributo android:text durante el tiempo de ejecución o si quieres ver el diseño con un valor diferente del valor predeterminado, puedes agregar tools:text para especificar texto solo para la vista previa de diseño
