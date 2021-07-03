@@ -37,6 +37,7 @@ raw: Contendrá archivos como vídeos o audios.
 ![image](https://user-images.githubusercontent.com/31891276/124340966-b5f49780-db7e-11eb-9ccc-829fc784268a.png)
 
 Crear el archivo Dimens.xml es una buena practica para setear dimensiones 
+
 ![image](https://user-images.githubusercontent.com/31891276/124341012-023fd780-db7f-11eb-84f6-cc6bbb7ec4f2.png)
 
 ## 4. La vista de diseño en Android Studio
@@ -87,6 +88,7 @@ ViewGroup: es un elemento que sirve para agrupar elementos. Nota: cuando tenemos
     </LinearLayout>
 
 Los Views son inline elements
+
 ![image](https://user-images.githubusercontent.com/31891276/124341884-64034000-db85-11eb-9284-d72f0fdccf1d.png)
 
 Los ViewsGroup son elementos agrupado dentro de una pantalla. tienen afectacion directa sobre todos sus elementos cuando hay afectaciones.
@@ -108,7 +110,13 @@ Este atributo usa toda la pantalla
 Atributos importantes: alto, ancho y id
 
 **Width y Height**: Nos permiten definir como un elemento se va a distribuir con respecto a su contenido.
+
 **Wrap content:** Hacer que crezca tanto como el contenido lo requiera.
+
 **Match parent:** Hará que el elemento ocupe toda la pantalla.
+
 **Hint:** Sugerencia para ingresar texto
+
 **Background:** Utilizar una imagen o color de fondo. Para acceder a los colores del archivo se inicia con @<archivo>/<color>.
+  
+  
