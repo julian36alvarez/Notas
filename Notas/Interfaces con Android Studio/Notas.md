@@ -468,3 +468,31 @@ Es la fomra en la que nuestra aplicacion muestra su imagen, muestra su esencia.
         </style>
     </resources>
     
+## 16 ¿Qué es un Tema?
+
+Tema: Es un estilo aplicado globalmente, quiere decir que cuando hagamos alguna modificación todos los elementos van a representar ese cambio.
+
+![image](https://user-images.githubusercontent.com/31891276/124373067-f888a380-dc54-11eb-85cb-bcc134bfb9de.png)
+
+Archivo Manifest: Es la sección donde definimos las pantallas que tenemos con respecto al código. (También es afectado por los temas).
+
+![image](https://user-images.githubusercontent.com/31891276/124373088-18b86280-dc55-11eb-8096-91eb8528af26.png)
+
+Un **Style** aplica sus reglas de manera independiente. Un **Theme** aplica sus reglas de manera global
+
+## 17 Distribuyendo nuestros valores
+
+![image](https://user-images.githubusercontent.com/31891276/124373233-1f93a500-dc56-11eb-9352-a86e7c3dbb90.png)
+
+    <?xml version="1.0" encoding="utf-8"?>
+    <resources>
+        <dimen name="text_size">14sp</dimen>
+        <dimen name="width_logo">160dp</dimen>
+        <dimen name="height_logo">120dp</dimen>
+        <dimen name="margin_default">12dp</dimen>
+    </resources>
+
+Prioridad de configuración de atributos:
+1. Atributo único interno
+2. Estilo
+3. Tema
