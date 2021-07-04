@@ -206,7 +206,7 @@ Ejemplo del Diseño
 
     </LinearLayout>
 
-## RelativeLayout: organizando con referencias.
+## 10. RelativeLayout: organizando con referencias.
 
 ![image](https://user-images.githubusercontent.com/31891276/124370064-87d38e00-dc38-11eb-9692-bfd1797326da.png)
 
@@ -244,5 +244,60 @@ Le estamos diciendo que el objeto esté alineado a la izquierda y derecha de la 
 ![image](https://user-images.githubusercontent.com/31891276/124370257-f0bc0580-dc3a-11eb-8999-ae9ec3e51177.png)
 
 ![image](https://user-images.githubusercontent.com/31891276/124370270-1c3ef000-dc3b-11eb-9844-24524e59cec3.png)
+
+## 11. RelativeLayout: Uso práctico.
+
+![image](https://user-images.githubusercontent.com/31891276/124371177-d7b85200-dc44-11eb-8852-5ef395a3e53a.png)
+
+Una ventaja de RelativeLayout es que en este se pueden crear interfaces usando menos ViewGroups, lo cuál hace el árbol jerárquico menos pesado.
+es una buena práctica en layouts que se quiere abarcar todo el espacio de pantalla, indicar un width de 0dp y usar alignParentStart y alignParentEnd para que el elemento ocupe todo el espacio disponible sin importar el espacio de la pantalla.
+
+    <?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/music_color_primary"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/ivLoginLogo"
+            android:layout_width="140dp"
+            android:layout_height="110dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/headphone" />
+
+        <EditText
+            android:id="@+id/etLoginUserName"
+            android:layout_margin="12dp"
+            android:drawablePadding="12dp"
+            android:layout_below="@id/ivLoginLogo"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:drawableStart="@drawable/vector_person"
+            android:hint="@string/hint_user"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:layout_below="@id/etLoginUserName"
+            android:drawableStart="@drawable/vector_lock"
+            android:layout_margin="12dp"
+            android:drawablePadding="12dp"
+            android:hint="@string/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:layout_alignParentBottom="true"
+            android:background="@color/music_color"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:text="@string/button_login"
+            android:layout_width="0dp"
+            android:layout_margin="12dp"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
 
 
