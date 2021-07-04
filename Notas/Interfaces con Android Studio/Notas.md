@@ -117,15 +117,18 @@ Atributos importantes: alto, ancho y id
 
 **Hint:** Sugerencia para ingresar texto
 
-**Background:** Utilizar una imagen o color de fondo. Para acceder a los colores del archivo se inicia con @<archivo>/<color>.
-  
+**Background:** Utilizar una imagen o color de fondo. Para acceder a los colores del archivo se inicia con
+
+    @<archivo>/<color>.
+
 ## 8 Otros atributos y el namespace tools
   
-**android:id**
+**Android id**
 
 Cualquier objeto View puede tener un ID entero asociado para identificarse de forma única dentro del árbol.
 Cuando se compila la aplicación, se hace referencia a este ID como un número entero, pero el ID se asigna normalmente en el archivo XML de diseño como una string del atributo id.
 Este es un atributo XML común para todos los objetos View (definido por la clase View) y lo utilizarás muy a menudo.
+  
 La sintaxis de un ID dentro de una etiqueta XML es la siguiente:  android:id="@+id/my_button"
 
 **Atributos específicos y atributos compartidos**
@@ -138,3 +141,70 @@ Si en algún momento no quieres utilizar un atributo especifico y quieres solame
 Es un namespace que nos permite ver en tiempo de diseño como se verá nuestra aplicación sin generar una versione final de la aplicación con esos valores.
 
 Por ejemplo, si se establece el valor del atributo android:text durante el tiempo de ejecución o si quieres ver el diseño con un valor diferente del valor predeterminado, puedes agregar tools:text para especificar texto solo para la vista previa de diseño
+para colocar imagenes.
+
+    @mipmap -@drawable
+
+## 9. LinearLayout: Organizacion lineal
+
+![image](https://user-images.githubusercontent.com/31891276/124366673-fe5f9400-dc16-11eb-8f9a-d06298d638aa.png)
+
+![image](https://user-images.githubusercontent.com/31891276/124366690-1e8f5300-dc17-11eb-9b6e-56d904b9dc5a.png)
+
+Pantallas 
+
+![image](https://user-images.githubusercontent.com/31891276/124366698-323ab980-dc17-11eb-8b4f-5f16a6f066a1.png)
+
+Ejemplo del Diseño
+
+![image](https://user-images.githubusercontent.com/31891276/124370026-fe23c080-dc37-11eb-94bb-2a797c602642.png)
+
+    <?xml version="1.0" encoding="utf-8"?>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/music_color_primary"
+        android:orientation="vertical">
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+        <ImageView
+            android:layout_width="140dp"
+            android:layout_height="110dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/headphone" />
+
+        <EditText
+            android:layout_margin="12dp"
+            android:drawablePadding="12dp"
+            android:drawableStart="@drawable/vector_person"
+            android:hint="@string/hint_user"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:drawableStart="@drawable/vector_lock"
+            android:layout_margin="12dp"
+            android:drawablePadding="12dp"
+            android:hint="@string/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+        <Button
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="12dp"
+            android:background="@color/music_color"
+            android:text="@string/button_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+
