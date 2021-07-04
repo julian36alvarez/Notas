@@ -206,5 +206,43 @@ Ejemplo del Diseño
 
     </LinearLayout>
 
+## RelativeLayout: organizando con referencias.
+
+![image](https://user-images.githubusercontent.com/31891276/124370064-87d38e00-dc38-11eb-9692-bfd1797326da.png)
+
+![image](https://user-images.githubusercontent.com/31891276/124370215-84d99d00-dc3a-11eb-97c8-fe357c0a8a70.png)
+
+para que el elemento esté alineado arriba utilizamos
+
+    layout_alingParentTop="true"
+
+si queremos que el elemento esté alineado abajo
+
+    layout_alingParentBottom="true"
+    
+para que un elemento esté alineado hacia la izquierda
+
+    layout_alingParentStart="true"
+
+para que se pueda alinear a la derecha
+
+layout_alingParentEnd="true"
+
+si queremos que un elemento esté alineado con respecto a otro elemento primero indicamos su posición y le indicamos el elemento con el que queremos que esté alineado
+
+    layout_alingParentEnd="true"
+    layout_below="@id/imagen"
+    este codigo sirve para alinear el objeto a la derecha con respecto al elemento imagen
+
+si lo que buscamos es que un elemento nos ocupe todo el ancho de la pantalla, RelativeLayout está pensado para eso, porque nosotros le podemos indicar la alineación inicial y final que debería tener en la pantalla.
+
+    layout_alingParentStart="true"
+    layout_alingParentEnd="true"
+
+Le estamos diciendo que el objeto esté alineado a la izquierda y derecha de la pantalla, de esta manera ocupará todo el ancho de todo el activity
+
+![image](https://user-images.githubusercontent.com/31891276/124370257-f0bc0580-dc3a-11eb-8999-ae9ec3e51177.png)
+
+![image](https://user-images.githubusercontent.com/31891276/124370270-1c3ef000-dc3b-11eb-9844-24524e59cec3.png)
 
 
