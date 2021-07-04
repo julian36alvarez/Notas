@@ -301,3 +301,145 @@ es una buena práctica en layouts que se quiere abarcar todo el espacio de panta
     </RelativeLayout>
 
 
+## 12. FrameLayout: Alineación por region.
+
+![image](https://user-images.githubusercontent.com/31891276/124371349-9aed5a80-dc46-11eb-82ef-78459c719c14.png)
+
+Con FrameLayout podemos organizar vistas unas sobre otras como si fueran capas y ajustar sus atributos layout_gravity para que tomen la posición que indique nuestro diseño. También podemos agregar vistas dinámicas.
+
+## 13. FrameLayout: Uso práctico.
+
+Un dato: Si es cierto q los dp es una unidad de medida que usa android para lo que es el espacio en pantalla. Fue creada para estandarizar una forma de medida, ya que Android tiene una gran cantidad de pantallas con densidades de pixeles muy variadas.
+Bueno pero android teniendo esta medida de DPs, divide cualquier pantalla en una cuadricula (como un cuaderno cuadriculado) donde cada cuadradito es de 8dp x 8dp, por esa razon es bueno intentar diseñar teniendo esa regla para las medidas de los views, paddings, margenes, imagenes,iconos,etc. : multiplos de 8 (8dp.16dp, 24 dp), por ejemplo si vas a poner altura a un appBar, no pongas 60, ponle 64, o si pones una altura para esa imageview y quieres poner 20 no pongas 20, ponle 16 o 24, osea siempre intenta llevar tus medidas a multiplos de 8 , es una recomendacion que hacen en la documentacion oficial. esto explica algo que veran constantemente en Android Studio, cuando el IDE autogenera alguna medida normalmente pone 8dp, 16dp, 24dp, etc . por ejemplo cuando estas usando los constraint layout y quieres poner margenes ,android studio te sugiere 8,16,24,etc…esto es por** la famosa regla de 8** anteriormente mencionada.
+
+![image](https://user-images.githubusercontent.com/31891276/124371541-4cd95680-dc48-11eb-92b5-642f18de6833.png)
+
+    <?xml version="1.0" encoding="utf-8"?>
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/music_color_primary"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_gravity="center_horizontal"
+
+            android:id="@+id/ivLoginLogo"
+            android:layout_width="140dp"
+            android:layout_height="110dp"
+            android:src="@drawable/headphone" />
+
+        <EditText
+            android:id="@+id/etLoginUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="120dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="12dp"
+            android:drawableStart="@drawable/vector_person"
+            android:drawablePadding="12dp"
+            android:hint="@string/hint_user" />
+        <EditText
+
+            android:drawableStart="@drawable/vector_lock"
+            android:layout_marginTop="180dp"
+            android:drawablePadding="12dp"
+            android:hint="@string/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:layout_gravity="bottom"
+            android:layout_width="match_parent"
+            android:layout_margin="12dp"
+            android:layout_height="wrap_content"
+            android:background="@color/music_color"
+            android:text="@string/button_login" />
+
+    </FrameLayout>
+
+## 14. Layouts externos: ConstraintLayout.
+
+El ConstraintLayout es que se encarga de que los elementos estén estirados con respectos a otros.
+Ejemplo: Si se hiciera invisible el elemento usuario el elemento password heredaría la configuración previa de usuario.
+
+![image](https://user-images.githubusercontent.com/31891276/124371583-c113fa00-dc48-11eb-9ec3-44b80ff02018.png)
+
+
+Agregar
+
+![image](https://user-images.githubusercontent.com/31891276/124371659-a42bf680-dc49-11eb-8925-e76a97bf2d0f.png)
+
+![image](https://user-images.githubusercontent.com/31891276/124371683-dfc6c080-dc49-11eb-935e-c0ce5659bdaf.png)
+
+Es el Layout por default
+
+![image](https://user-images.githubusercontent.com/31891276/124371714-10a6f580-dc4a-11eb-922d-0edbb306ade7.png)
+
+**Nota Clave:** *para ordenar lo elemntos toca presionar el conjunto de teclas Ctr + Alt + l*
+
+![image](https://user-images.githubusercontent.com/31891276/124372256-2d91f780-dc4f-11eb-83f3-53f288395dc6.png)
+
+
+    <?xml version="1.0" encoding="utf-8"?>
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/music_color_primary">
+
+        <ImageView
+            android:id="@+id/ivLoginLogo"
+            android:layout_width="140dp"
+            android:layout_height="110dp"
+            android:src="@drawable/headphone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <EditText
+            android:id="@+id/etLoginUsername"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:layout_marginTop="516dp"
+            android:drawableStart="@drawable/vector_person"
+            android:hint="@string/hint_user"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ivLoginLogo" />
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/vector_lock"
+            android:drawablePadding="12dp"
+            android:hint="@string/password"
+            app:layout_constraintBottom_toTopOf="@id/etLoginUsername"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@color/music_color"
+            android:text="@string/button_login"
+            android:layout_margin="12dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+** Algunos short cuts en windows:
+Ctrl + d al inicio de la línea, la duplica
+Ctrl + / al incio de la línea, la comenta **
+
+
+Ctrl + Alt + Shift comenta varias líneas de código seleccionadas
