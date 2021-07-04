@@ -496,3 +496,95 @@ Prioridad de configuración de atributos:
 1. Atributo único interno
 2. Estilo
 3. Tema
+
+## 18. Agregando widgets externos
+
+
+https://developer.android.com/guide/topics/appwidgets?hl=es-419
+
+
+![image](https://user-images.githubusercontent.com/31891276/124389764-42ea3e80-dcae-11eb-9f2a-de7f3545f69b.png)
+
+![image](https://user-images.githubusercontent.com/31891276/124389800-6d3bfc00-dcae-11eb-9fa1-808c2fb0b022.png)
+
+    dependencies {
+
+        implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+        implementation 'androidx.core:core-ktx:1.3.1'
+        implementation 'androidx.appcompat:appcompat:1.2.0'
+        implementation 'com.google.android.material:material:1.2.1'
+        implementation 'de.hdodenhof:circleimageview:3.1.0'
+        implementation 'androidx.constraintlayout:constraintlayout:2.0.1'
+        testImplementation 'junit:junit:4.+'
+        androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+        androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+    }
+
+![image](https://user-images.githubusercontent.com/31891276/124390001-49c58100-dcaf-11eb-9bc5-d4e22211f568.png)
+
+    <?xml version="1.0" encoding="utf-8"?>
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/music_color_primary">
+
+        <ImageView
+            android:id="@+id/ivLoginLogo"
+            android:layout_width="140dp"
+            android:layout_height="110dp"
+            android:src="@drawable/headphone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <EditText
+            android:id="@+id/etLoginUsername"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:layout_marginTop="516dp"
+            android:drawableStart="@drawable/vector_person"
+            android:hint="@string/hint_user"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ivLoginLogo" />
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/vector_lock"
+            android:drawablePadding="12dp"
+            android:hint="@string/password"
+            app:layout_constraintBottom_toTopOf="@id/etLoginUsername"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_image"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:src="@drawable/Screenshot_2"
+            app:civ_border_width="2dp"
+            app:civ_border_color="#FF000000"/>
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@color/music_color"
+            android:text="@string/button_login"
+            android:layout_margin="12dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    
