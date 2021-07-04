@@ -437,9 +437,7 @@ Es el Layout por default
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-** Algunos short cuts en windows:
-Ctrl + d al inicio de la línea, la duplica
-Ctrl + / al incio de la línea, la comenta **
-
-
-Ctrl + Alt + Shift comenta varias líneas de código seleccionadas
+** Algunos short cuts en windows: **
+*Ctrl + d al inicio de la línea, la duplica*
+*Ctrl + / al incio de la línea, la comenta *
+*Ctrl + Alt + Shift comenta varias líneas de código seleccionadas*
