@@ -446,3 +446,25 @@ Es el Layout por default
 
 *Ctrl + Alt + Shift comenta varias líneas de código seleccionadas*
 
+## 15 ¿Qué es un estilo?
+
+Es la fomra en la que nuestra aplicacion muestra su imagen, muestra su esencia.
+
+![image](https://user-images.githubusercontent.com/31891276/124372534-3931ee00-dc50-11eb-87ce-79dc672ada50.png)
+
+    <resources>
+
+        <!-- Base application theme. -->
+        <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+            <!-- Customize your theme here. -->
+            <item name="colorPrimary">@color/colorPrimary</item>
+            <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+            <item name="colorAccent">@color/colorAccent</item>
+        </style>
+
+        <style name="AppTheme.EditTextStyle" parent="AppTheme">
+            <item name="android:textSize">16sp</item>
+            <item name="android:drawablePadding">12dp</item>
+        </style>
+    </resources>
+    
