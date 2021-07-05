@@ -189,8 +189,55 @@ elementos:
 
 ![image](https://user-images.githubusercontent.com/31891276/124518643-92af2f80-ddac-11eb-856b-aed9142265a6.png)
 
-## 12. Particion de Tablas.
+## 13. Particion de Tablas.
 
 ![image](https://user-images.githubusercontent.com/31891276/124519462-05b9a580-ddaf-11eb-9f0f-04f562574822.png)
 
+![image](https://user-images.githubusercontent.com/31891276/124521269-88912f00-ddb4-11eb-8e3e-cd18dd72c3f6.png)
 
+    
+    CREATE TABLE public.bitacora_viaje
+    (
+        id integer NOT NULL DEFAULT nextval('bitacora_viaje_id_seq'::regclass),
+        id_viaje integer,
+        fecha date
+    ) PARTITION BY RANGE (fecha);
+
+    ALTER TABLE public.bitacora_viaje
+        OWNER to postgres;
+
+    -- Partitions SQL
+
+    CREATE TABLE public.bitacora_viaje20102021 PARTITION OF public.bitacora_viaje
+        FOR VALUES FROM ('2010-01-01') TO ('2021-12-31');
+
+    ALTER TABLE public.bitacora_viaje20102021
+        OWNER to postgres;
+
+no es posible crear llaves primarias en particiones.
+
+## 14. Creacion de Roles.
+
+![image](https://user-images.githubusercontent.com/31891276/124521798-79ab7c00-ddb6-11eb-9b3f-060d77f58171.png)
+
+
+![image](https://user-images.githubusercontent.com/31891276/124523145-6ea71a80-ddbb-11eb-9495-00c365c25766.png)
+
+## 15. Llaves foráneas
+
+![image](https://user-images.githubusercontent.com/31891276/124523590-4e785b00-ddbd-11eb-8977-d9132ad8cda2.png)
+
+Opciones de las foreing Keys son: 
+Deferreable (Aplazar validación)
+Deferred (Apenas se crea se válida)
+Match Type (SIMPLE=VALOR A VALOR OR FULL=COMPLEJA)
+Validated (Iniciamos las tablas con la validación)
+Auto FK Index (No es un indice de la tabla)
+
+En la pestania Action le tenemos que decir que hacer a la base de datos entre la tabla origen y la tabla destino cuando ocurra un cambio:
+
+NO ACTION: No hacer nada
+RESTRICT: Decirle a Postgres que no podemos permitir que la tabla cambie algo.
+CASCADE: Si cambio la tabla de origen, la tabla destino tambien cambia.
+SET NULL quiere decir que nuestra columna en esa fila va a dejar de tener por ejemplo el ID que tenia asociado un 77 y va a convertirse en NULL. Esto por que la tabla destino recibe un cambio y le decimos aPostgres que lo ponga en nulo.
+SET DEFAULT: Si hay un cambio en la tabla origen nuestra tabla destino ponga un valor predeterminado. En un ejemplo un id podra quedar NULL.
