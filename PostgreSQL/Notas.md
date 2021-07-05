@@ -37,3 +37,56 @@ Aca vemos nustra base de datos en PGAdmin
 
 ![image](https://user-images.githubusercontent.com/31891276/124503183-9e89fa00-dd8a-11eb-9015-ef05054b9a8a.png)
 
+## 4. Interacción con Postgres desde la Consola.
+
+**ENTRAR A LA CONSOLA DE POSTGRES**
+
+    psql -U postgres -W
+        
+**VER LOS COMANDOS \ DE POSTGRES**
+
+    \?
+    
+**LISTAR TODAS LAS BASES DE DATOS**
+
+    \l
+    
+**VER LAS TABLAS DE UNA BASE DE DATOS**
+
+    \dt
+    
+**CAMBIAR A OTRA BD**
+
+    \c nombre_BD
+    
+**DESCRIBIR UNA TABLA**
+
+    \d nombre_tabla
+    
+**VER TODOS LOS COMANDOS SQL**
+
+    \h
+    
+**VER COMO SE EJECTUA UN COMANDO SQL**
+
+    \h nombre_de_la_funcion
+  
+**CANCELAR TODO LO QUE HAY EN PANTALLA**
+
+    Ctrl + C
+  
+**VER LA VERSION DE POSTGRES INSTALADA, IMPORTANTE PONER EL ';'**
+
+    SELECT version();
+  
+**VOLVER A EJECUTAR LA FUNCION REALIADA ANTERIORMENTE**
+
+    \g
+  
+**INICIALIZAR EL CONTADOR DE TIEMPO PARA QUE LA CONSOLA TE DIGA EN CADA EJECUCION ¿CUANTO DEMORO EN EJECUTAR ESA FUNCION?**
+
+    \timing 
+  
+**LIMPIAR PANTALLA DE LA CONSOLA PSQL**
+
+    Ctrl + L
