@@ -185,6 +185,12 @@ elementos:
 
 ![image](https://user-images.githubusercontent.com/31891276/124518516-35b37980-ddac-11eb-881e-8f3efd5cb403.png)
 
-## 12. 
+## 12. Creación de Tablas.
+
+![image](https://user-images.githubusercontent.com/31891276/124518643-92af2f80-ddac-11eb-856b-aed9142265a6.png)
+
+## 12. Particion de Tablas.
+
+![image](https://user-images.githubusercontent.com/31891276/124519462-05b9a580-ddaf-11eb-9f0f-04f562574822.png)
 
 
