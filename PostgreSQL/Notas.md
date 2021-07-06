@@ -236,8 +236,304 @@ Auto FK Index (No es un indice de la tabla)
 
 En la pestania Action le tenemos que decir que hacer a la base de datos entre la tabla origen y la tabla destino cuando ocurra un cambio:
 
-NO ACTION: No hacer nada
+NO ACTION: No hacer nada.
+
 RESTRICT: Decirle a Postgres que no podemos permitir que la tabla cambie algo.
+
 CASCADE: Si cambio la tabla de origen, la tabla destino tambien cambia.
+
 SET NULL quiere decir que nuestra columna en esa fila va a dejar de tener por ejemplo el ID que tenia asociado un 77 y va a convertirse en NULL. Esto por que la tabla destino recibe un cambio y le decimos aPostgres que lo ponga en nulo.
+
 SET DEFAULT: Si hay un cambio en la tabla origen nuestra tabla destino ponga un valor predeterminado. En un ejemplo un id podra quedar NULL.
+
+## 16. Inserción y consulta de datos.
+    INSERT INTO public.trayecto(
+        id_tren,id_estacion)
+        VALUES ( 1 ,1);
+## 17. Inserción masiva de datos.
+
+Insertar Datos de manera masiva.
+
+    https://mockaroo.com/
+    
+## 18. Cruzar tablas: SQL JOIN
+
+![image](https://user-images.githubusercontent.com/31891276/124615230-aef9ad80-de3a-11eb-86ae-83aabc508bd1.png)
+
+![image](https://user-images.githubusercontent.com/31891276/124615318-c20c7d80-de3a-11eb-81bb-ea1b07deb62d.png)
+
+## 19. Funciones Especiales Principales.
+
+![image](https://user-images.githubusercontent.com/31891276/124615858-3cd59880-de3b-11eb-9c2c-7bab8e39e75d.png)
+
+**ON CONFLICT DO**
+
+Esta instruccion nos permite especificar que debemos hacer en caso de un conflicto.
+Ejemplo: Imaginamos que realizamos una consulta donde el id ya ha sido utilizado. Podemos especificar que en ese caso, actualize los datos.
+
+    INSERT INTO pasajero (id, nombre, direccion_residencia, fecha_nacimiento)
+        values (1, '', '','2010-01-01')
+        ON CONFLICT (id) DO 
+        UPDATE SET 
+        nombre = '', direccion_residencia='', fecha_nacimiento='2010-01-01';
+
+**RETURNING**
+
+Returning nos devuelve una consulta select de los campos sobre los que ha tenido efecto la instruccion.
+Ejemplo: Queremos saber cual es el id que le fue asignado a un dato insertado.
+
+    INSERT INTO tren (modelo, capacidad)
+         VALUES('modelo x', 100)
+         RETURNING id;
+    /*
+    Opcionalmente tambien puedes solicitar todos los campos o alguno de ellos
+    */
+
+    INSERT INTO tren (modelo, capacidad)
+         VALUES('modelo x', 100)
+         RETURNING id;
+
+    INSERT INTO tren (modelo, capacidad)
+         VALUES('modelo x', 100)
+         RETURNING id, capacidad;
+
+**Like / Ilike**
+
+Las funciones like y ilike sirven para crear consultas a base de expresiones regulares.
+Like considera mayusculas y minusculas, mientras que ilike solo considera las letras.
+Ejemplo: Busquemos a los pasajeros con nombre que terminen con la letra o
+
+
+    -- Usando LIKE
+    SELECT * FROM PASAJERO
+    WHERE pasajero.nombre LIKE '%O'
+    -- No devulve nada, porque ningun nombre terminara con una letra mayuscula
+
+
+    -- Usando ILIKE
+    SELECT * FROM PASAJERO
+    WHERE pasajero.nombre LIKE '%O'
+    -- Devolvera los nombres que terminen con o, independiente si es mayuscula o minuscula.
+    
+**IS / IS NOT**
+
+Permite hacer comprobacion de valores especiales como null
+Ejemplo: Consultemos a todos los usuarios que tengan como direccion_residencia NULL
+
+    -- IS
+    SELECT * FROM PASAJERO
+    WHERE pasajero.nombre IS null;
+
+    -- IS NOT
+    SELECT * FROM PASAJERO
+    WHERE pasajero.nombre IS NOT null;
+
+
+## 20. Funciones Especiales Avanzadas
+
+![image](https://user-images.githubusercontent.com/31891276/124619795-92f80b00-de3e-11eb-8f39-8112eff9fcf3.png)
+
+**COALESCE**
+Permite comparar dos valores y retornar cual no es null.
+
+    SELECT coalesce(nombre,'No aplica') FROM PASAJERO where id=1
+
+**NULLIF**
+Nos permite comparar dos valores y retorna null si son Iguales.
+
+    SELECT coalesce(nombre,'No aplica') FROM PASAJERO where id=1
+
+**GREATEST**
+
+Permite comparar un arreglo de valores y definir el mayor o el menor.
+
+    select greatest(1,2,3,5,4,5,4,5,8,4,4,7)
+
+**LEAST**
+
+Permite ingresar condicionales dentro de una consulta de base de datos.
+
+    select least(1,2,3,5,4,5,4,5,8,4,4,7)
+    
+**Bloques Anónimos**
+
+    select id , nombre, fecha_naciemiento,
+    case
+    when fecha_naciemiento > '1999-01-01' then 'Es JOVEN' 
+    ELSE 'ES UN CUCHO' END
+    from pasajero
+    
+## 21 VISTAS
+
+![image](https://user-images.githubusercontent.com/31891276/124627097-e2413a00-de44-11eb-8d26-1b85796fab65.png)
+
+Tipos de vistas:
+- Vista Volátil: Consulta con data actualizada
+- Vista Materializada: Consulta con data persistente
+
+## 22 PL/SQL
+
+PL o procedimientos almacenados, tambien hacen parte de motor de postgresSQL
+su estructura es sencilla y tiene una declaracion uso de varibles y un fin
+
+![image](https://user-images.githubusercontent.com/31891276/124631014-91cbdb80-de48-11eb-9670-5892c6f3f295.png)
+
+![image](https://user-images.githubusercontent.com/31891276/124631042-9bedda00-de48-11eb-9cdc-59904f96e029.png)
+
+un bloque de codigo se ejecuta con la funcion do.
+
+DO $$ para abrir
+begin
+$$ -- para cerrar
+
+![image](https://user-images.githubusercontent.com/31891276/124631401-f9822680-de48-11eb-913b-c20e1a7b4664.png)
+
+    do $$
+    begin
+        raise notice 'Algo esta pasando';
+    end
+    $$
+    
+    do $$
+    declare
+    rec record;
+    contador integer :=0;
+    begin
+        FOR rec in select * from pasajero LOOP
+            raise notice 'Un pasajero se llama %', rec.nombre;
+            contador := contador +1;
+        END LOOP;
+    raise notice 'El Conteo es %', contador;	
+    end
+    $$
+    
+ **Función**
+ 
+    create OR REPLACE function importantePL() 
+        Returns integer
+    as $$
+    declare
+    rec record;
+    contador integer :=0;
+    begin
+        FOR rec in select * from pasajero LOOP
+            raise notice 'Un pasajero se llama %', rec.nombre;
+            contador := contador +1;
+        END LOOP;
+    raise notice 'El Conteo es %', contador;
+    return contador;
+    end
+    $$
+    language PLPGSQL;
+
+    SELECT importantePL() 
+    
+ ## Triggers
+ 
+ ![image](https://user-images.githubusercontent.com/31891276/124636330-0b19fd00-de4e-11eb-8073-88dc4e123d6d.png)
+
+
+    CREATE OR REPLACE FUNCTION public.trigger_func()
+    RETURNS trigger
+    LANGUAGE 'plpgsql'
+    VOLATILE
+    COST 100
+    AS $BODY$
+    declare
+    rec record;
+    contador integer :=0;
+    begin
+            FOR rec in select * from pasajero LOOP
+                raise notice 'Un pasajero se llama %', rec.nombre;
+                contador := contador +1;
+            END LOOP;
+    --raise notice 'El Conteo es %', contador;
+        insert into conteo_pasajeros(total, time)
+        values (contador, now());
+        return new
+    END
+    $BODY$;
+
+Se crea el lanzador del trigger.
+
+    CREATE TRIGGER mitrigger
+    AFTER INSERT on pasajero for each row
+    execute procedure trigger_func();
+
+
+## 24. Simulando una conexión a Bases de Datos remotas
+
+Hacemos Conexion a una base de datos remoto y la cruzamos con nuestra informacion.
+
+    create extension dblink;
+
+    select * from pasajero as pj
+    join 
+    (select * from dblink('dbname=remota 
+           port=5432 
+           host=127.0.0.1 
+           user=usuario_consulta 
+           password=1q2w3e4r5T', 'select * from vip') 
+     as datos_remotos (id integer, fecha date, id_usuario integer)) as dt
+    on  pj.id= dt.id_usuario
+  
+## 25. Transacciones.
+
+![image](https://user-images.githubusercontent.com/31891276/124666936-56470680-de74-11eb-93af-6543e32e1620.png)
+
+Lo desactivamos primero
+
+![image](https://user-images.githubusercontent.com/31891276/124667092-8e4e4980-de74-11eb-9555-be07da851b94.png)
+
+## 26. Otras Extensiones para Postgres.
+
+https://www.postgresql.org/docs/11/contrib.html
+
+## 27. Backups y Restauración.
+
+![image](https://user-images.githubusercontent.com/31891276/124670606-d4f27280-de79-11eb-8e7f-bdeb56560d4d.png)
+
+## 28. 
+
+Vacuum: La más importante, con tres opciones, Vacuum, Freeze y Analyze.
+Full: la tabla quedará limpia en su totalidad
+Freeze: durante el proceso la tabla se congela y no permite modificaciones hasta que no termina la limpieza
+Analyze: solo revisa la tabla 
+
+
+Analyze: No hace cambios en la tabla. Solo hace una revisión y la muestra.
+
+
+Reindex: Aplica para tablas con numerosos registros con indices, como por ejemplo las llaves primarias.
+
+
+Cluster: Especificamos al motor de base de datos que reorganice la información en el disco.
+
+
+![image](https://user-images.githubusercontent.com/31891276/124672365-85617600-de7c-11eb-889e-3a3fd408aa4e.png)
+
+
+Se recomienda hacerlo por tabla, o que el sistema lo haga solo.
+
+se debe hacer cuando existen problemas de indexacion.
+
+## 29. Introducción a Réplicas.
+
+
+Pensar siempre en modo replica, limites de fisica y de electronica, 
+
+Una maestra y otra master o compia en caliente.
+
+IO PS
+
+Son mecánismos que permiten evitar problemas de entrada y salida en los SO.
+“Existen 2 tipos de personas, los que ya usan réplicas y los que las van a usar…” - Piensa siempre en modo réplica.
+A medida que la DB crece encontraremos limitaciones físicas y de electrónica, si la DB aumenta tanto su tamaño, las limitaciones serán de procesamiento, RAM, almacenamiento.
+Hemos visto que las consultas en local son muy rápidas, sin embargo, cuando la aplicación ha sido desplegada pueden ocurrir multiples peticiones de lectura y escritura. Todos los motores de DB pueden hacer una ejecución a la vez, por lo que recibir tantas peticiones de consulta al mismo tiempo puede hacer que regresar una consulta se demore demasiado y eso puede ser catastrófico, pero las réplicas son la solución a este tipo de problemas.
+¿Cuál es la estrategia? Tener una base de datos principal donde se realizan todas las modificaciones, y una base de datos secundaria dónde se realiza las lecturas. Separar las tareas es altamente beneficioso en cuanto al rendimiento de la aplicación, así, cuando se modifica una DB automáticamente se lleva el cambio a la DB de lectura. Todo lo que hay que hacer es configurar 2 servidores de postgres, uno como maestro y otro como esclavo. Se debe modificar la aplicación para que todas las modificaciones se hagan sobre el maestro y la lectura sobre la replica, o la DB en caliente. Es imposible realizar cambios en la DB de réplica.
+
+## 30. Implementación de Réplicas en Postgres
+
+https://jelastic.com/
+
+https://platzi.com/tutoriales/1480-postgresql/6559-implementacion-de-replicas-en-postgres-con-docker-2/
