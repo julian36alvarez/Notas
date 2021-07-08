@@ -145,11 +145,26 @@ Usamos la capa DAO para conectarnos a nuestra base de datos. **DAO** Significa D
 
 https://github.com/julian36alvarez/JavaPersistence.git  
   
-## 11.
-## 12.
-## 13.
-## 14.
-## 15.
+## 11. CRUD: inserción de datos.
+
+    https://github.com/julian36alvarez/JavaPersistence.git  
+    
+    Timestamp.from(Instant.now())
+    
+    
+## 12. CRUD: lectura de datos
+  
+    https://github.com/julian36alvarez/JavaPersistence.git  
+
+## 13. CRUD: actualización de datos.
+
+    https://github.com/julian36alvarez/JavaPersistence.git  
+    
+## 14. CRUD: Eliminacion  de datos.
+
+    https://github.com/julian36alvarez/JavaPersistence.git  
+    
+## 15.API REST y métodos HTTP
 ## 16.
 ## 17.
 ## 18.
