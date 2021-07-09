@@ -47,4 +47,16 @@ https://business.linkedin.com/en-uk/marketing-solutions/blog/posts/content-marke
 
 ## 10. Face to face interview etiquette.
 
+## 12. Vocabulary.
 
+**Competencies:** the abilities to perform a task efficiently. Competencies involve skills, abilities and knowledge. They are your qualifications for a job.
+
+**Hard Skills:** learned abilities that are acquired and enhanced through practice, repetition, and education. They are teachable and measurable technical abilities that fit the job position.
+
+**Soft Skills:** they are non-technical skills that relate to how you work and which are not related to a specific job.
+
+**Plain language:** Clear and effective communication with straightforward expression or using only as many words as are necessary.
+
+**Pair Coding or Programming:** an Agile technique originating from extreme programming in which two developers get together and code using the same screen.
+
+**Portfolio:** a portable showcase of your work and talents which represent your skills and achievements.
