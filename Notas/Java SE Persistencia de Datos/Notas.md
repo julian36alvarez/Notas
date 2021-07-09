@@ -164,9 +164,39 @@ https://github.com/julian36alvarez/JavaPersistence.git
 
     https://github.com/julian36alvarez/JavaPersistence.git  
     
-## 15.API REST y métodos HTTP
-## 16.
-## 17.
+## 15.API REST y métodos HTTP.
+
+![image](https://user-images.githubusercontent.com/31891276/124995065-6560bc80-e00c-11eb-8308-b4ecb3998b99.png)
+
+Una Api es una interfaz de programacion de aplicaciones, es un conjunto de recursos para consumirlos y comunicarse entre si. 
+
+GET: Obtener información
+
+POST: Guardar o enviar información
+
+PUT o PATCH: Para actualizar o editar información
+
+DELETE: Cuando queremos borrar información
+
+## 16. Conociendo algunas APIs.
+
+https://api.thedogapi.com/v1/images/search
+
+      OkHttpClient client = new OkHttpClient().newBuilder()
+        .build();
+      Request request = new Request.Builder()
+        .url("https://api.thedogapi.com/v1/images/search")
+        .method("GET", null)
+        .build();
+      Response response = client.newCall(request).execute();
+      
+      
+![image](https://user-images.githubusercontent.com/31891276/125000064-271bcb00-e015-11eb-8ba4-dde5780a7016.png)
+
+
+## 17. Creación del proyecto y API KEY.
+
+
 ## 18.
 ## 19.
 ## 20.
