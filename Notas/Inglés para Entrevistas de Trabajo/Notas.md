@@ -60,3 +60,19 @@ https://business.linkedin.com/en-uk/marketing-solutions/blog/posts/content-marke
 **Pair Coding or Programming:** an Agile technique originating from extreme programming in which two developers get together and code using the same screen.
 
 **Portfolio:** a portable showcase of your work and talents which represent your skills and achievements.
+
+## 13 Tell me about yourself - your 1 minute commercial.
+
+**Who you are?**
+
+I am a highly qualified professional with a Degree in System Engineer  and over five years of experience in the areas of development and IT within different industries. 
+
+**What makes you unique?**
+Among the strengths, I have developed are my excellent communication skills, attention to detail, teamwork, problem solving skills and being innovative especially in development strategies. 
+
+Now I am looking for a new challenge in Java development. I would like to contribute with my qualifications and experience in order to reach company goals.
+
+## 14. Talk to me about your past work experiences.
+
+I have had experience in software development, management and IT positions. My latest position was as Java software developer and it was a great experience since I had the chance to work with a team of 3 talented employees and together we reached our company goals, we worked in the development of the emergency platform of COVID.
+
