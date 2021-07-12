@@ -128,5 +128,17 @@ I am passionate about research and development within the Software sector. I adm
 
 It’s always important to be completely honest. Even if nobody noticed, I would definitely address the mistake I made by trying to solve it and asking for help if I need it.
 
+## 23. Questions for the interviewer.
+
+How would you describe the company culture?
+
+What do you like most about working here?
+
+How do you define and measure success for this role?
+
+What do you think is the most challenging aspect of this position?
+
+Are there opportunities for professional growth?
+
 
 
