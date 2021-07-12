@@ -76,3 +76,57 @@ Now I am looking for a new challenge in Java development. I would like to contri
 
 I have had experience in software development, management and IT positions. My latest position was as Java software developer and it was a great experience since I had the chance to work with a team of 3 talented employees and together we reached our company goals, we worked in the development of the emergency platform of COVID.
 
+## 15. Why do you want to work for this company and why should we hire you?
+
+I admire your company’s results in the industry and I have experience in the services your company provides. 
+I am goal-oriented and I deliver exceptional results in software development.
+Since I have worked with people from different countries I adapt easily and work well with other people. 
+I am sure I would be a good match for this position. 
+I am very passionate about software development and I am committed to creating innovative strategies to achieve company goals.
+
+## 16. Talking about your skills and competencies.
+
+My Hard Skills:
+
+**Web Development**.
+**JAVA Development**.
+**Logic and strategy**.
+**Basic level English**.
+
+My Soft Skills:
+
+**Adaptability**
+**Teamwork**
+// este es mi debilidad **Time management**  weakness
+**Respect**
+.
+My Competencies:
+
+**Conflict Resolution**
+**Responsibility**
+**Critical Thinking**
+
+## 18. What are your strengths and weaknesses?.
+
+I adapt easily to changes and actually take them as opportunities. For example, we started using Amazon Web services at work recently so I read everything about it and how to use it effectively. After learning about it I can see that it is very useful to work in cloud services. I like learning new things constantly.
+
+I am naturally shy.
+I am Introvert person, but I am a respectful person and listen actively. 
+
+## 19. The salary expectation question.
+
+My salary range is flexible. However, I would like to be compensated reasonably according to my qualifications, experience and professional achievements. 
+I would expect to receive something in the range of five to six million
+
+## 20. Where do you see yourself in 5 years?.
+
+I am passionate about research and development within the Software sector. I admire the business’s significant role in creating robust software systems.
+
+"In five years’ time, I want to have made my own contributions to the development of software technologies. I am therefore excited about the opportunity this position presents for developing my expertise.
+
+## 21. Answering situational questions.
+
+It’s always important to be completely honest. Even if nobody noticed, I would definitely address the mistake I made by trying to solve it and asking for help if I need it.
+
+
+
