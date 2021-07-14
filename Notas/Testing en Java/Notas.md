@@ -31,3 +31,11 @@ Existen test automáticos y manuales, los automáticos van a requerir tiempo de 
   - Funcionales: prueban una funcionalidad de nuestro proyecto, pueden involucrarse varias clases.  
   - Inicio a fin: prueba todo un proceso del proyecto.  
   - Estrés: útil para probar si nuestra aplicación puede soportar grandes cantidades de procesos y peticiones a  
+
+## 3.  Instalación de IntelliJ IDEA, creación del Proyecto con Maven y Tests Unitarios.  
+
+
+![image](https://user-images.githubusercontent.com/31891276/125543662-2c624856-631b-40fd-b1ea-09ac1498d25a.png)
+
+
+
