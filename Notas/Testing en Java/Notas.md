@@ -102,5 +102,43 @@ Lanzar Exepcion.
 
 ![image](https://user-images.githubusercontent.com/31891276/125885024-85648ec6-dc9e-455b-81ee-3036a7ab9470.png)
 
+## 7 Organización de tests con JUnit.
+
+La forma correcta de separar nuestras pruebas es realizar cada una en su propia función, además, el nombre de la función debe describir que estamos probando.
+
+Para indicarle a JUnit que esperamos una excepción lo debemos hacer de la siguiente forma:
+
+    @Test(expected = IllegalArgumentException.class)
 
 
+**Ejemplo **
+
+        import org.junit.Test;
+
+        import java.awt.*;
+
+        import static com.julian.javatest.util.PasswordUtil.SecurityLevel.*;
+        import static org.junit.Assert.*;
+
+        public class PasswordUtilTest {
+
+            @Test
+            public void weak_when_has_less_than_8_letters() {
+                assertEquals(WEAK, PasswordUtil.assessPassword("123aa!"));
+            }
+
+            @Test
+            public void weak_when_has_only_letters() {
+                assertEquals(WEAK, PasswordUtil.assessPassword("abcdefghjk"));
+            }
+
+            @Test
+            public void medium_when_has_letters_and_numbers() {
+                assertEquals(MEDIUM, PasswordUtil.assessPassword("abcde12345"));
+            }
+
+            @Test
+            public void strong_when_has_letters_numbers_and_symbols() {
+                assertEquals(STRONG, PasswordUtil.assessPassword("abcd123!"));
+            }
+        }
