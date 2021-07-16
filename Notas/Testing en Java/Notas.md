@@ -96,3 +96,11 @@ Lanzar Exepcion.
         }
     }
 
+## 6. Test unitario con JUnit
+
+![image](https://user-images.githubusercontent.com/31891276/125884764-d27d8e10-750f-4fd1-83be-c56e67ad82a7.png)
+
+![image](https://user-images.githubusercontent.com/31891276/125885024-85648ec6-dc9e-455b-81ee-3036a7ab9470.png)
+
+
+
