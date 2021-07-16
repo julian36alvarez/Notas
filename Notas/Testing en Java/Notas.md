@@ -142,3 +142,33 @@ Para indicarle a JUnit que esperamos una excepción lo debemos hacer de la sigui
                 assertEquals(STRONG, PasswordUtil.assessPassword("abcd123!"));
             }
         }
+
+## Test con Mockito para simular un dado.
+
+[Mockito](https://site.mockito.org/) nos va a servir para simular clases mientras probamos, para añadirlo a nuestro proyecto debemos agregar la dependencia en maven.
+
+      package com.julian.javatest.player;
+
+      import org.junit.Test;
+      import org.mockito.Mockito;
+
+      import static org.junit.Assert.*;
+
+      public class PlayerTest {
+          @Test
+          public void looses_when_dice_number_is_too_low() {
+              Dice dice = Mockito.mock(Dice.class);
+              Mockito.when(dice.roll()).thenReturn(2);
+              Player player = new Player(dice, 3);
+              assertEquals(false,player.play());
+          }
+
+          @Test
+          public void win_when_dice_number_is_big() {
+              Dice dice = Mockito.mock(Dice.class);
+              Mockito.when(dice.roll()).thenReturn(4);
+              Player player = new Player(dice, 3);
+              assertEquals(true,player.play());
+          }
+      }
+
