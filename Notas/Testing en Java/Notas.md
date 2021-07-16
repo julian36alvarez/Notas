@@ -71,3 +71,28 @@ import static org.junit.Assert.*;
             assertEquals(STRONG, PasswordUtil.assessPassword("abcd123!"));
         }
     }
+
+## 5. Creación de test unitario: lanzar una excepción para alertar sobre un error.
+
+![image](https://user-images.githubusercontent.com/31891276/125883433-330ffd20-26cf-4fef-9be3-303558b4931d.png)
+Lanzar Exepcion. 
+
+    package com.julian.javatest.util;
+
+    public class StringUtilTest {
+        public static void main(String[] args) {
+            String result = StringUtil.repeat("Hola Olixito", 1);
+            System.out.println("result = " + result);
+            if(result.equals("Hola Olixito")){
+                System.out.println("OK");
+            }
+        }
+
+        private static void assertEquals(String actual, String expected) {
+
+            if (!actual.equals(expected)) {
+                throw new RuntimeException(actual + " is not equal to expected " + expected);
+            }
+        }
+    }
+
