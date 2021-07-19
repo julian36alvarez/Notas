@@ -269,7 +269,6 @@ El Test Driven Development (TDD) o desarrollo guiado por test, creado por Kent B
 Sólo escribirás código de test hasta que falle.  
 Sólo escribirás código de producción para pasar el test.  
 No escribirás más código de producción del necesario.  
-Puedes combinar las reglas del TDD con su ciclo tal como hizo el profesor:  
 
 **Red:** Escribirás el mínimo de código test que falle.  
 **Green:** Escribirás el mínimo de código de producción que pase el test.  
