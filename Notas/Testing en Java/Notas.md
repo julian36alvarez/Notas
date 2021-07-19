@@ -207,3 +207,14 @@ Para indicarle a JUnit que esperamos una excepción lo debemos hacer de la sigui
             assertFalse(paymentProcessor.makePayment(1000));
         }
     }
+
+## 10 Análisis de los tests y mejoras.
+
+Nuestros test siguen un mismo proceso:
+
+Se preparan los objetos que vamos a probar.  
+  - Llamamos al método que estamos probando.  
+  - Comprobamos los resultados.  
+  - Podemos reducir la cantidad de código moviendo las partes comunes de preparación a una función que se ejecute antes de cada prueba.  
+Con @Before le indicamos a JUnit la función que debe ejecutar antes de cada prueba.  
+
