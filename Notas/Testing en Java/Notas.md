@@ -218,3 +218,61 @@ Se preparan los objetos que vamos a probar.
   - Podemos reducir la cantidad de código moviendo las partes comunes de preparación a una función que se ejecute antes de cada prueba.  
 Con @Before le indicamos a JUnit la función que debe ejecutar antes de cada prueba.  
 
+    package com.platzi.javatests.payments;
+
+    import org.junit.Before;
+    import org.junit.Test;
+    import org.mockito.Mockito;
+
+    import static org.junit.Assert.*;
+
+    public class PaymentProcessorTest {
+
+        private PaymentGateway paymentGateway;
+        private PaymentProcessor paymentProcessor;
+
+        @Before
+        public void setup() {
+
+            paymentGateway = Mockito.mock(PaymentGateway.class);
+            paymentProcessor = new PaymentProcessor(paymentGateway);
+        }
+
+        @Test
+        public void payment_is_correct() {
+
+            Mockito.when(paymentGateway.requestPayment(Mockito.any()))
+                    .thenReturn(new PaymentResponse(PaymentResponse.PaymentStatus.OK));
+
+            assertTrue(paymentProcessor.makePayment(1000));
+        }
+
+        @Test
+        public void payment_is_wrong() {
+
+            Mockito.when(paymentGateway.requestPayment(Mockito.any()))
+                    .thenReturn(new PaymentResponse(PaymentResponse.PaymentStatus.ERROR));
+
+            assertFalse(paymentProcessor.makePayment(1000));
+        }
+    }
+  
+## 12. TDD: Definición, Beneficios, Ciclos y Reglas
+
+El Test Driven Development (TDD) o desarrollo guiado por test, creado por Kent Beck, consiste en escribir primero los test antes que las clases permitiéndote ver si el diseño de una clase es la adecuada.  
+
+### **El ciclo del TDD ** 
+**Red:** escribe un test que falle.  
+**Green:** escribe el código necesario para que pase el test.  
+**Refactor:** mejora el código.  
+### Reglas  
+Sólo escribirás código de test hasta que falle.  
+Sólo escribirás código de producción para pasar el test.  
+No escribirás más código de producción del necesario.  
+Puedes combinar las reglas del TDD con su ciclo tal como hizo el profesor:  
+
+**Red:** Escribirás el mínimo de código test que falle.  
+**Green:** Escribirás el mínimo de código de producción que pase el test.  
+**Refactor:** sólo cuando los tests estén pasando.  
+
+    
