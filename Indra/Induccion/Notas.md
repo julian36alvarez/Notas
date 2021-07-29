@@ -24,3 +24,23 @@ solo requiere una instalación Java.
 ![image](https://user-images.githubusercontent.com/31891276/127529649-9b091bb0-1ec2-48b7-96bd-b4dcae7a9275.png)
 
 ![image](https://user-images.githubusercontent.com/31891276/127529680-0887edf0-b289-41f4-9cb6-a77c9fd55bd0.png)
+
+
+Gestión de configuración.
+
+URL Línea Base 
+        
+     http://10.100.82.12/Accenture-T2/CRM-Portal/APP-ActivadoresStandalone
+
+Versionamiento GIT:
+
+    http://netvm-pgit01
+
+Merge:
+
+Se pueden presentar dos escenarios para la realización del Merge.  
+    ### 1. Merge de la línea base:  
+    cuando se pasa un requerimiento a producción rama X, desde la línea base se hace Merge con la rama X  
+    ### 2. Merge de una rama: 
+    cuando hay un requerimiento en ejecución rama X (línea base + requerimiento), y en el periodo de ejecución pasa producción otro requerimiento con rama Z.
+En este caso se crea una rama J la cual contiene la línea base(línea base + rama Z) y se hace un Merge con la rama X.
