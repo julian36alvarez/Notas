@@ -80,10 +80,45 @@ Para una activación Portabilidad prepago o Postpago, el proceso es similar al a
 
 El componente activatorPort.jar de los ActivadoresStandalone se encuentra desarrollado en JAVA, que compila bajo la versión jdk1.6.0_45.    
 
-Se despliega en un SO Linux Red Hat Enterprise Linux Server release 6.6 configurado con un jboss-portal-2.7.1 Base de datos Oracle 10G y 11G.  
+Se despliega en un SO Linux Red Hat Enterprise Linux Server release 6.6 configurado con un jboss-portal-2.7.1 Base de datos Oracle 10G y 11G. 
 
 Ruta instalación activatorPort.jar: /home/app/portActivator/src   
 
-![src/BRM.png](src/BRM.png)
+# CRM - BRM
 
+![src/BRM.png](src/BRM.PNG)
+
+![image](https://user-images.githubusercontent.com/31891276/127554363-78bbd278-6879-4647-b409-cb44ce4a1651.png)
+
+Los componentes que interfieren en el proceso de comunicación bajo el framework o utilidad Tigo Commons se explican a continuación:  
+
+InfranetConnectorClient: Componente que contiene las interfaces remotos y utilidades comunes para realizar un llamado correcto a través de Infranet.   
+Tigo-commons.xml: Archivo de configuración que soporta la ejecución de Tigo-Commons, en este se encuentra configurados entre algunas otras propiedades:  
+Entorno: Determina el entorno en el cual se esta ejecutado.  
+Nombre de la instancia del contenedor: Nombre del contenedor local  
+Conexión a base de datos: Se especifica el nombre del Pool configurado o los datos de conexión en caso de ser una aplicación standalone como el activador.  
+Propiedades: Siempre se especifican al menos dos, la de consulta de propiedades y las de inserción. Estas se encargar de obtener la configuración de la tabla TLC_CONFIG_PROPERTIES de PostSale.  
+
+Tigo-commons: Componente que se encarga, entre algunas funciones de:  
+Realizar la publicación en el árbol JNDI local del contenedor el mapeo a un EJB remoto que se encuentra en un contendor diferente bajo una JVM externa. Es acá donde se realiza el mapeo entre:   
+
+![image](https://user-images.githubusercontent.com/31891276/127554586-74881c68-58d2-4321-bad4-b2f8f6f78c53.png)
+
+![image](https://user-images.githubusercontent.com/31891276/127555393-ef827c0d-8098-49c5-956d-4155215ecaf6.png)
+
+Dentro del montaje de una aplicación y/o entorno que utilice de Tigo Commons para su funcionamiento es importante tener en cuenta los siguientes puntos:
+
+- Todos los tigo-commons deben apuntar a la misma base de datos de PostSale (Activador, Jboss Portal, WebLogic)  
+- El nombre del datasource especificado en tigo-commons debe estar configurado y apuntando al mismo postsale que los demás  
+- Los archivos que referencias al home del dominio de weblogic que se esta montando deben estar correctamente configurados, algunos son:  
+
+        WL_HOME/domain/config/config.xml
+        WL_HOME/domain/init-info/startscript.xml
+        WL_HOME/domain/bin/setDomainEnv.sh
+        
+para que funcione correctamente log4j se sugiere adicionar definir y exportar la ruta de log4j, esto garantiza la escritura de los logs de Tigo Commons y de InfranetConnector en Weblogic, esto se puede hacer en setDomainEnv.sh.
+
+![image](https://user-images.githubusercontent.com/31891276/127556281-af8206c8-8d10-4b9a-9653-296949bda97e.png)
+
+Tener en cuenta que NO todos las clases que se tienen en InfranetService utilizan InfranetConnector, por lo cual, durante pruebas ser cauteloso que se prueba y como.
 
