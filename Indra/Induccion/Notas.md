@@ -39,9 +39,9 @@ Versionamiento GIT:
 Merge:
 
 Se pueden presentar dos escenarios para la realización del Merge.  
-     1. **Merge de la línea base:  **
+     1. ** Merge de la línea base:  **
     cuando se pasa un requerimiento a producción rama X, desde la línea base se hace Merge con la rama X  
-     2. **Merge de una rama: **
+     2. ** Merge de una rama: **
     cuando hay un requerimiento en ejecución rama X (línea base + requerimiento), y en el periodo de ejecución pasa producción otro requerimiento con rama Z.
 En este caso se crea una rama J la cual contiene la línea base(línea base + rama Z) y se hace un Merge con la rama X.
 
