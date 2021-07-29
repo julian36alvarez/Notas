@@ -83,3 +83,7 @@ El componente activatorPort.jar de los ActivadoresStandalone se encuentra desarr
 Se despliega en un SO Linux Red Hat Enterprise Linux Server release 6.6 configurado con un jboss-portal-2.7.1 Base de datos Oracle 10G y 11G.  
 
 Ruta instalación activatorPort.jar: /home/app/portActivator/src   
+
+![src/BRM.png](src/BRM.png)
+
+
