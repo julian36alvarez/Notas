@@ -5,13 +5,13 @@
 El FRONT del activador se encuentra dentro del CRM portal (sostenibilidad) de Tigo. El Portal CRM es la plataforma CORE de la Unidad Móvil para el soporte a los procesos de venta, posventa y en general todos los procesos de servicio al cliente a usuarios de líneas móviles Tigo.
 En Tigo contamos con diferentes familias o tipos de planes, que pueden ser activados de acuerdo con las necesidades de los clientes, estos se pueden clasificar:  
 Activaciones:  
-    • Prepago
-    • Control
-    • Arma Tu Plan (ATP)
-    • Postpago
-    • Financiación con Terceros (Credivalores)
-    • Portabilidad
-    • Ventas Segmentadas
+    • Prepago  
+    • Control  
+    • Arma Tu Plan (ATP)  
+    • Postpago  
+    • Financiación con Terceros (Credivalores)  
+    • Portabilidad  
+    • Ventas Segmentadas  
     
     ![image](https://user-images.githubusercontent.com/31891276/127529510-4addcfd8-85a3-4be8-a861-75b2a94467a4.png)
 
