@@ -44,3 +44,17 @@ Se pueden presentar dos escenarios para la realización del Merge.
      2. **Merge de una rama: **
     cuando hay un requerimiento en ejecución rama X (línea base + requerimiento), y en el periodo de ejecución pasa producción otro requerimiento con rama Z.
 En este caso se crea una rama J la cual contiene la línea base(línea base + rama Z) y se hace un Merge con la rama X.
+
+### Actualización de Línea Base  
+Se realiza una semana después que se hace un paso a producción y con estabilización de los sistemas.
+
+Procesos de Release o Versionamiento para Salidas (Dsllo, Integración o Pro)
+
+    1. Salida a desarrollo: Se crea una rama reléase la cual va a
+    contener el requerimiento + lo que está en la línea base. Se
+    crea una carpeta con el nombre del requerimiento la cual va a
+    contener la rama reléase.
+    2. Salida a pruebas: Se copia la carpeta de desarrollo a pruebas.
+    3. Salida a producción: Se copia la carpeta de pruebas a
+    producción. Se hace un merge de la línea base con la rama
+    reléase.
