@@ -13,7 +13,7 @@ Activaciones:
     • Portabilidad  
     • Ventas Segmentadas  
     
-    ![image](https://user-images.githubusercontent.com/31891276/127529510-4addcfd8-85a3-4be8-a861-75b2a94467a4.png)
+![image](https://user-images.githubusercontent.com/31891276/127529510-4addcfd8-85a3-4be8-a861-75b2a94467a4.png)
 
 ### Diferencias entre archivos EAR y WAR
 La mayor diferencia entre los archivos JAR, WAR y EAR es el hecho de que están dirigidos a diferentes entornos. 
