@@ -39,9 +39,9 @@ Versionamiento GIT:
 Merge:
 
 Se pueden presentar dos escenarios para la realización del Merge.  
-**1 Merge de la línea base:  **  
+**Merge de la línea base:**  
 cuando se pasa un requerimiento a producción rama X, desde la línea base se hace Merge con la rama X  
-**2 Merge de una rama: **  
+**Merge de una rama:**  
 cuando hay un requerimiento en ejecución rama X (línea base + requerimiento), y en el periodo de ejecución pasa producción otro requerimiento con rama Z.
 En este caso se crea una rama J la cual contiene la línea base(línea base + rama Z) y se hace un Merge con la rama X.
 
@@ -58,3 +58,28 @@ Procesos de Release o Versionamiento para Salidas (Dsllo, Integración o Pro)
     3. Salida a producción: Se copia la carpeta de pruebas a
     producción. Se hace un merge de la línea base con la rama
     reléase.
+
+# activatorPort.jar
+
+La aplicación de activatorPort soporta los procesos de portabilidad prepago y pospago, los cuales pueden ser realizados desde sistemas WEB (Portal CRM).
+
+Para una activación Portabilidad prepago o Postpago, el proceso es similar al anterior con la diferencia de que se valida el NIP (número de identificación de portabilidad) y el activador Standalone que procesa la activación es activatorPort, además al finalizar la activación si esta es exitosa se genera una solicitud de portabilidad. A continuación diagrama de proceso de activación de portabilidad:
+
+![image](https://user-images.githubusercontent.com/31891276/127536351-40c9f753-0cd9-410e-b9f4-3cd29b90464b.png)
+
+## Diagrama de componentes de la aplicación
+
+![image](https://user-images.githubusercontent.com/31891276/127536384-736e4275-5472-49d2-bf2e-0dace1708fa4.png)
+
+
+
+## URL Línea Base
+
+    http://10.100.82.12/Accenture-T2/CRM-Portal/APP-ActivadoresStandalone
+
+
+El componente activatorPort.jar de los ActivadoresStandalone se encuentra desarrollado en JAVA, que compila bajo la versión jdk1.6.0_45.    
+
+Se despliega en un SO Linux Red Hat Enterprise Linux Server release 6.6 configurado con un jboss-portal-2.7.1 Base de datos Oracle 10G y 11G.  
+
+Ruta instalación activatorPort.jar: /home/app/portActivator/src   
