@@ -122,3 +122,11 @@ para que funcione correctamente log4j se sugiere adicionar definir y exportar la
 
 Tener en cuenta que NO todos las clases que se tienen en InfranetService utilizan InfranetConnector, por lo cual, durante pruebas ser cauteloso que se prueba y como.
 
+## Billing and Revenue Management (BRM) system  
+
+The url of the WSDL in integration environment is:  
+
+    http://10.25.65.17:7001/gatewaybrmint/GatewayBrmWSInt?WSDL
+
+The user is testuser and the password is testuser.  
+
