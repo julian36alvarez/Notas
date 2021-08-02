@@ -276,3 +276,13 @@ No escribirás más código de producción del necesario.
 
     
 ## 13. Ejemplos de TDD: calcular el año bisiesto
+## 22.
+
+Normalmente, el desarrollo de los proyectos comienza a partir de requerimientos muy bien especificados. Sin embargo, habrá veces donde el programador debe definirlos o acabar de concretarlos. No importa cuál sea el caso, solo podemos empezar a escribir los tests una vez tenemos los requerimientos.  
+
+Existen diferentes escenarios:  
+
+Típicos  
+Extremos  
+Incorrectos  
+No previstos  
