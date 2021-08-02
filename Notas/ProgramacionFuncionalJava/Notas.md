@@ -50,8 +50,13 @@ Una función pura puede invocar a una función pura, pero no a una impura. Si un
 
 Un efecto secundario es todo cambio observable desde fuera del sistema es un efecto secundario. Los efectos secundarios son inevitables (porque terminan siendo necesarios), algunos ejemplos son:
 
-CRUD sobre archivos  
-CRUD sobre una base de datos  
-Enviar/Recibir una llamada de red  
+CRUD sobre archivos.  
+CRUD sobre una base de datos.  
+Enviar/Recibir una llamada de red.  
 Alterar un objeto/variable usada por otras funciones.  
 Sin embargo, se deben reducir los efectos secundarios, porque ayuda a tener una mejor estructura del código (favoreciendo la generación de funciones puras, la modularidad y la testeabilidad).  
+
+![image](https://user-images.githubusercontent.com/31891276/127795467-d61b8d02-a0fd-49fa-8fdf-c8e9bb68634a.png)  
+
+
+
