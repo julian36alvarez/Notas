@@ -60,6 +60,28 @@ Sin embargo, se deben reducir los efectos secundarios, porque ayuda a tener una 
 
 ![image](https://user-images.githubusercontent.com/31891276/127795511-29d1186f-4a7b-49ac-b4f9-284e0325cea8.png)  
 
+## 6. Funciones de orden mayor
+
+![image](https://user-images.githubusercontent.com/31891276/127795602-05080c6a-44ca-47e7-a87d-9929b9524f36.png)
+
+funcion de orden mayor toma una funcion como otro parametro o retorna una funcion
+
+![image](https://user-images.githubusercontent.com/31891276/127795729-eb6608bc-afee-4ff6-b5f8-2a1252788b04.png)
+
+## 7. Funciones Lambda
+
+![image](https://user-images.githubusercontent.com/31891276/127795761-047a4e9f-a988-4bef-b09d-7e7b654ad665.png)
+
+Función = Tiene un nombre.  
+Lambda = Función que no tiene un nombre.  
+
+Por qué usar lambdas?  
+Es un comportamiento único.  
+Es una regla que solo se requiere en un lugar.  
+Es una función muy simple (1 línea).  
+
+![image](https://user-images.githubusercontent.com/31891276/127795815-f4b899f9-c559-417a-b252-7f3fa08b3ac6.png)
+
 
 
 
