@@ -82,6 +82,9 @@ Es una función muy simple (1 línea).
 
 ![image](https://user-images.githubusercontent.com/31891276/127795815-f4b899f9-c559-417a-b252-7f3fa08b3ac6.png)
 
+![image](https://user-images.githubusercontent.com/31891276/127795856-ddcd03d1-475b-452a-9017-4831ccdd517a.png)  
+
+
 
 
 
