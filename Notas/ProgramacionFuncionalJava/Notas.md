@@ -58,5 +58,8 @@ Sin embargo, se deben reducir los efectos secundarios, porque ayuda a tener una 
 
 ![image](https://user-images.githubusercontent.com/31891276/127795467-d61b8d02-a0fd-49fa-8fdf-c8e9bb68634a.png)  
 
+![image](https://user-images.githubusercontent.com/31891276/127795511-29d1186f-4a7b-49ac-b4f9-284e0325cea8.png)  
+
+
 
 
