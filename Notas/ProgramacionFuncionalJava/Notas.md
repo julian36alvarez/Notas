@@ -84,6 +84,11 @@ Es una función muy simple (1 línea).
 
 ![image](https://user-images.githubusercontent.com/31891276/127795856-ddcd03d1-475b-452a-9017-4831ccdd517a.png)  
 
+## 8. Inmutabilidad
+
+![image](https://user-images.githubusercontent.com/31891276/127862348-fd166e5f-e035-4289-853f-1a87233a8a10.png)
+
+![image](https://user-images.githubusercontent.com/31891276/127862580-745f71a2-7c41-4573-931f-947ff4040a82.png)
 
 
 
