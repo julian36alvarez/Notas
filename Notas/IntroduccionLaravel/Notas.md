@@ -36,3 +36,6 @@ Con composer sería composer
 Para instalar una versión específica de Laravel, por ejemplo Laravel 6, debes especificarlo en el comando de instalación así:  
 
     composer create-project --prefer-dist laravel-laravel dir "6.*"
+    
+Usas Mac y solo debes actualizar  
+Laravel siempre nos obligará a estar actualizado, te comparto este enlace: https://rimorsoft.com/actualizar-a-php-7-3-x-con-homebrew-en-mac, te ayudará mucho si usas Mac y un entorno de trabajo parecido al mio.  
