@@ -163,8 +163,8 @@ La programación orientada a objetos es una forma de programar, un paradigma o u
 
 Podemos resumir los diferentes conceptos de la siguiente manera:
 
-- Herencia: compartir métodos entre clases padres y clases hijas.  
+- **Herencia:** compartir métodos entre clases padres y clases hijas.  
 Abstracción: significa aislar, separar y sacar.  
-- Polimorfismo: capacidad o virtud que tienen los métodos donde, por ejemplo, un mismo método puede tener diferentes comportamientos y dar diferentes resultados.  
-- Modularidad: este principio básicamente nos ayuda a tener cada vez piezas de código más pequeñas y entendibles, donde cada pieza es un módulo y muchos módulos forman el sistema entero.  
-- Encapsulamiento: un objeto debe estar aislado y ser un módulo natural. Esto se cumple aplicando la protección a las propiedades impidiendo su modificación y básicamente se refiere a controlar el acceso.  
+- **Polimorfismo:** capacidad o virtud que tienen los métodos donde, por ejemplo, un mismo método puede tener diferentes comportamientos y dar diferentes resultados.  
+- **Modularidad:** este principio básicamente nos ayuda a tener cada vez piezas de código más pequeñas y entendibles, donde cada pieza es un módulo y muchos módulos forman el sistema entero.  
+- **Encapsulamiento:** un objeto debe estar aislado y ser un módulo natural. Esto se cumple aplicando la protección a las propiedades impidiendo su modificación y básicamente se refiere a controlar el acceso.  
