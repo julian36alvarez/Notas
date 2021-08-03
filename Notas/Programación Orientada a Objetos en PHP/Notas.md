@@ -80,3 +80,51 @@ Public → Puede ser accedido por todos, o seá por cualquier elemento o clase.
 Protected → Podrá ser accedido a nivel de la clases, paquetes y Subclases (las clases hijas ← clases padres).  
 Defaulf → Este nos permite el acceso a nivel de clases y paquetes. O sea, que a nivel de herencia no puede ser accedido.  
 Private → Solo puede ser accedido a nivel de clases, esto quiere decir, que solo puedes ser modificado a nivel de la clase, o sea, por ella misma.  
+
+## 9. Modularidad
+
+Esta no es una técnica de programación, pero si es algo con lo que debemos cumplir para que a futuro se más fácil la mantenibilidad. Este concepto aplica views, models, controllers, helpers, etc.
+
+## Polimorfismo.
+
+El polimorfismo solamente significa varias formas. Esto quiere decir que si un mismo elemento si se comporta de diferentes maneras y otorga diferentes resultados quiere decir que aplica el término de polimorfismo.
+
+    <?php
+
+    abstract class Base {
+        protected $name;
+
+        private function getClassName() {
+            return get_called_class();
+        }
+
+        public function login() {
+            return "<p>Mi nombre es $this->name desde la clase {$this->getClassName()} <br><p>";
+        }
+    }
+
+    class Admin extends Base {
+        public function __construct($name) {
+            $this->name = $name;
+        }
+    }
+
+    class User extends Base {
+        public function __construct($name) {
+            $this->name = $name;
+        }
+    }
+
+    class Guest extends Base {
+        protected $name = 'invitado';
+    }
+
+    $guest = new Guest();
+    echo $guest->login();
+
+    $admin = new Admin('Helena');
+    echo $admin->login();
+
+    $user = new User('John Moore');
+    echo $user->login();
+
