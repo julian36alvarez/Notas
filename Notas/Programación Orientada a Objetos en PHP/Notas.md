@@ -168,3 +168,13 @@ Abstracción: significa aislar, separar y sacar.
 - **Polimorfismo:** capacidad o virtud que tienen los métodos donde, por ejemplo, un mismo método puede tener diferentes comportamientos y dar diferentes resultados.  
 - **Modularidad:** este principio básicamente nos ayuda a tener cada vez piezas de código más pequeñas y entendibles, donde cada pieza es un módulo y muchos módulos forman el sistema entero.  
 - **Encapsulamiento:** un objeto debe estar aislado y ser un módulo natural. Esto se cumple aplicando la protección a las propiedades impidiendo su modificación y básicamente se refiere a controlar el acceso.  
+
+
+Al entender este estilo conseguimos organizar mucho mejor nuestro código agrupando tareas comunes para crear una sola solución y usarla las veces que sean necesarias en nuestro proyecto. Evitamos con esto repetir código y ganamos mucho al dar mantenimiento en el futuro.  
+
+Comienza con la palabra reservada class.  
+El código va entre llaves { }.  
+La información se guarda en propiedades que pueden ser públicas, privadas o protegidas.  
+Cada acción la colocamos en métodos que básicamente son funciones o bloques de código dentro de una clase.  
+$this es una variable reservada por el lenguaje que podemos usar para acceder a elementos propios, siempre y cuando estemos en la instancia de la clase.  
+new es la palabra clave usada para crear un objeto a partir de una clase.  
