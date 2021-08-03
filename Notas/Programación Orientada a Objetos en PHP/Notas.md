@@ -85,7 +85,7 @@ Private → Solo puede ser accedido a nivel de clases, esto quiere decir, que so
 
 Esta no es una técnica de programación, pero si es algo con lo que debemos cumplir para que a futuro se más fácil la mantenibilidad. Este concepto aplica views, models, controllers, helpers, etc.
 
-## Polimorfismo.
+## 10 Polimorfismo.
 
 El polimorfismo solamente significa varias formas. Esto quiere decir que si un mismo elemento si se comporta de diferentes maneras y otorga diferentes resultados quiere decir que aplica el término de polimorfismo.
 
@@ -127,4 +127,21 @@ El polimorfismo solamente significa varias formas. Esto quiere decir que si un m
 
     $user = new User('John Moore');
     echo $user->login();
+    
+## 11. Polimorfismo: interfaz  
 
+En programación avanzada siempre vamos a trabajar sobre interfaces. Vamos a trabajar con estas porque es lo que enviamos, o sea, que lo enviamos a nivel de configuración.
+
+Nos vamos a encargar de preparar todo el código necesario, así no trabajamos sobre _usuarios _sino sobre la interfaz de usuarios.
+
+## 12. Herencia.
+
+- La herencia nos permitirá crear nuevas clases a partir de otras. O sea, vamos reutilizar código. Quiere decir, que vamos a hacer una abstracción para generar una súper clases general que después utilicemos para crear otras clases  
+
+- En la herencia también tendremos una jerarquía de padre e hijo.
+En OOP, la clase padre siempre la encontraremos como la ‘Súperclase’ y los hijos como ‘subclase’. 
+
+Y a través de encapsulamiento vamos a poder definir que puede heredar el hijo y que no.
+El método constructor nos permite inicializar las variables del objeto.  
+
+Para evitar que se incumpla los principios SOLID 2 y 3, podemos utilizar la palabra reservada final al principio del método. También, podemos utilizar este la palabra reservado final en una clase, pero esto significa que no puede ser heredada.  
