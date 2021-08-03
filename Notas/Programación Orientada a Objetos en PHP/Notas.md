@@ -35,12 +35,48 @@ Un código espagueti es código que está estructurado mediante if, while, for n
 - Crea de forma lógica y coherente diferentes métodos que reemplacen tus estructuras de control.  
 - Crea una o varias clases dependiendo el caso.  
 
-## 5. Inclusión de archivos.
-include'<ruta>': Como la palabra lo dice, incluye un archivo dentro de otro. Cuando el archivo no es encontrado o tiene algún error, el sistema lanzara un warning pero seguirá trabajando  
+## 5. Inclusión de archivos. 
 
-require ('<ruta>'): Funciona igual que include la única diferencia es que este arrojara un fatal error a nivel de compilación y todo el sistema dejara de funcionar hasta que se solucione el problema.  
-  
-requiere_once ('<ruta>'): Funciona igual que requiere excepto que PHP verificará si el archivo ya ha sido incluido y si es así, no se incluye (require) de nuevo.  
+include : Como la palabra lo dice, incluye un archivo dentro de otro. Cuando el archivo no es encontrado o tiene algún error, el sistema lanzara un warning pero seguirá trabajando  
 
-include_once '<ruta>': Tiene un comportamiento similar al de la sentencia include, siendo la única diferencia de que si el código del fichero ya ha sido incluido, no se volverá a incluir, e include_once devolverá TRUE. Como su nombre indica, el fichero será incluido solamente una vez.  
+require (): Funciona igual que include la única diferencia es que este arrojara un fatal error a nivel de compilación y todo el sistema dejara de funcionar hasta que se solucione el problema.  
   
+requiere_once (): Funciona igual que requiere excepto que PHP verificará si el archivo ya ha sido incluido y si es así, no se incluye (require) de nuevo.  
+
+include_once : Tiene un comportamiento similar al de la sentencia include, siendo la única diferencia de que si el código del fichero ya ha sido incluido, no se volverá a incluir, e include_once devolverá TRUE. Como su nombre indica, el fichero será incluido solamente una vez.  
+
+## 6. Introducción a clases y objetos.
+  
+## 7. Abstracción.
+Pensar el resultado final antes de programar, nos ayuda a aislar separar o sacar.
+  
+## 8. Alcance o Encapsulamiento.
+  
+El alcance hace referencia al encapsulamiento o principio de ocultación. Esto nos ayuda cuando estamos trabajando con herencia.
+
+    <?php
+
+    class User {
+        // public
+        // protected
+        // private
+
+        public const PAGINATE = 25;
+
+        public $username;
+        // protected $username;
+        // private  $username;
+
+        public function getUsername() {
+            # code...
+        }
+
+        // Poner en mayúsculas nos ayuda crear rutas absolutas y no relativas var_dump(__DIR__);
+    }
+
+Para esconder datos vamos a utilizar los modificadores de acceso:  
+
+Public → Puede ser accedido por todos, o seá por cualquier elemento o clase.  
+Protected → Podrá ser accedido a nivel de la clases, paquetes y Subclases (las clases hijas ← clases padres).  
+Defaulf → Este nos permite el acceso a nivel de clases y paquetes. O sea, que a nivel de herencia no puede ser accedido.  
+Private → Solo puede ser accedido a nivel de clases, esto quiere decir, que solo puedes ser modificado a nivel de la clase, o sea, por ella misma.  
