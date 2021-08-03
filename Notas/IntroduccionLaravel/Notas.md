@@ -39,3 +39,7 @@ Para instalar una versión específica de Laravel, por ejemplo Laravel 6, debes 
     
 Usas Mac y solo debes actualizar  
 Laravel siempre nos obligará a estar actualizado, te comparto este enlace: https://rimorsoft.com/actualizar-a-php-7-3-x-con-homebrew-en-mac, te ayudará mucho si usas Mac y un entorno de trabajo parecido al mio.  
+
+## 3. Entendiendo el ciclo de vida de las solicitudes web.
+
+![image](https://user-images.githubusercontent.com/31891276/128033700-a91e3586-519b-4e0a-b79c-41f1faf44e3b.png)
