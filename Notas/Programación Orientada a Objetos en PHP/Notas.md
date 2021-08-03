@@ -145,3 +145,26 @@ Y a través de encapsulamiento vamos a poder definir que puede heredar el hijo y
 El método constructor nos permite inicializar las variables del objeto.  
 
 Para evitar que se incumpla los principios SOLID 2 y 3, podemos utilizar la palabra reservada final al principio del método. También, podemos utilizar este la palabra reservado final en una clase, pero esto significa que no puede ser heredada.  
+
+## 13. Interfaces.
+
+Una interfaz se desarrolla y se implementa en una clase, al implementarla nosotros estamos obligados a desarrollar todos los métodos que la interfaz define.  
+
+Esto quiere decir, que una interfaz no puede hacer nada por si sola, lo que significa que las clases hijas están encargadas de definir el comportamiento de todos los métodos abstractos de forma obligatoria.  
+
+En palabras más sencillas, las interfaces serán contratos que indicarán que es lo que se debe de hacer sin proveer ninguna funcionalidad.  
+
+## Resumen
+
+La programación orientada a objetos es una forma de programar, un paradigma o una técnica.  Recordemos que para programar de esta forma en realidad debemos crear objetos, y un objeto es una instancia de una clase y una clase es el molde. Ejemplo:
+
+- Programación orientada a objetos: es la técnica.
+- PHP: es el lenguaje de programación (donde implementamos la técnica).
+
+Podemos resumir los diferentes conceptos de la siguiente manera:
+
+- Herencia: compartir métodos entre clases padres y clases hijas.  
+Abstracción: significa aislar, separar y sacar.  
+- Polimorfismo: capacidad o virtud que tienen los métodos donde, por ejemplo, un mismo método puede tener diferentes comportamientos y dar diferentes resultados.  
+- Modularidad: este principio básicamente nos ayuda a tener cada vez piezas de código más pequeñas y entendibles, donde cada pieza es un módulo y muchos módulos forman el sistema entero.  
+- Encapsulamiento: un objeto debe estar aislado y ser un módulo natural. Esto se cumple aplicando la protección a las propiedades impidiendo su modificación y básicamente se refiere a controlar el acceso.  
