@@ -90,6 +90,28 @@ Es una función muy simple (1 línea).
 
 ![image](https://user-images.githubusercontent.com/31891276/127862580-745f71a2-7c41-4573-931f-947ff4040a82.png)
 
+## 9 -10 REPO
+
+    https://github.com/sierisimo/JavaSE-Functional-platzi
+
+## 13 Revisando el paquete java.util.function: Consumer y Supplier
+
+Consumer: Es una expresion lambda que acepta un solo valor y no devuelven valor alguno.  
+Ejemplo: Una funcion que reciba una lista de archivos y borre cada uno de ellos, sin devolver nada.  
+
+Supplier: Es una expresion que no tienen parámetros pero devuelven un resultado.  
+Ejemplo: Se crea un supplier de tipo CLIArguments llamado generator que no recibe ni un parametro pero que crea un nuevo objeto CLIArguments y retorna generator, Se pueden crear archivos bajo demanda.  
+
+
+## 14.
+
+Estas funciones extienden de Function. Quiere decir que tienen el método apply.  
+ 
+**UnaryOPerator** --> Solo se especifica un solo tipo de dato. Se entiende que tendrá como resultado el mismo tipo.  
+
+**BinaryOperator** --> Solo se especifica un tipo de dato. Se entiende que tendrá 2 parámetros de entrada y el uno de retorno del mismo tipo de dato.  
+
+**Bifunction** --> 2 parámetros de entrada, se tiene que especificar el tipo de dato. Puede tener diferentes tipos de entradas como también diferente tipo de salida  
 
 
 
