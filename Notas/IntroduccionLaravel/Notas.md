@@ -43,3 +43,14 @@ Laravel siempre nos obligará a estar actualizado, te comparto este enlace: http
 ## 3. Entendiendo el ciclo de vida de las solicitudes web.
 
 ![image](https://user-images.githubusercontent.com/31891276/128033700-a91e3586-519b-4e0a-b79c-41f1faf44e3b.png)
+
+## Rutas
+
+![image](https://user-images.githubusercontent.com/31891276/128442660-3b927eb3-293c-4ca2-9128-246d7aa1c1bf.png)
+
+Route::resource: Te permite gestionar 7 rutas junto con un controlador  
+php artisan make:controller [NombreControlador]: Genera un controlador  
+php artisan make:controller [NombreControlador] --resource: Genera un controlador con las 7 funciones necesarias que necesita Route::resource  
+php artisan make:controller [NombreControlador] --resource --model: Genera un controlador con las 7 funciones necesarias que necesita Route::resource así como el modelo necesario para ese controlador  
+
+
