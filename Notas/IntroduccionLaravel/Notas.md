@@ -29,6 +29,12 @@ También existe la opción de usar Homestead, esto es más avanzado y requiere u
 ### Instalación de Laravel  
 
 Podemos usar composer directamente o instalar un software llamado "instalador de Laravel".
+
+## Validación de datos (rutas, vistas, formularios y controladores)
+
+![image](https://user-images.githubusercontent.com/31891276/128508137-b4f742ba-e07f-48e7-9cc0-ad63cf7dd91e.png)
+
+
 Con composer sería composer  
 
       create-project --prefer-dist laravel/laravel nombre-app
