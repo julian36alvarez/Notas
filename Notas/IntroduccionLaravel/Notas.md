@@ -147,3 +147,21 @@ Y luego podemos usarla y aplicarla donde corresponde. Veamos en una ruta varios 
           ->middleware('auth', 'subscribed', 'verify-age');
 
 Acá y en el video de la clase vimos la forma correcta de proteger a nuestras rutas o métodos en controladores, lo importante es definir qué queremos proteger o interceder y crear la lógica en un archivo aparte. Una persona con poca experiencia usaría estos if pero en las vistas, en cada método de un controlador o en cada una de las rutas. Esto funcionaria pero no es la manera correcta de trabajar.          
+
+
+
+## Blade: sistema de plantillas avanzado.
+
+Blade es el sistema de plantillas de Laravel. Todo lo que tiene que ver con vistas estará en resources
+
+**@yield(‘contenido’)** → Esto le indica a Laravel que aquí se va registrar el contenido, y le pondremos dentro un nombre identificador.  
+**@extends(‘archivo’)** → Para indicar de quién vamos a utilizar el @yield  
+**@section(‘contenido’)** → Con este le indicamos a Laravel el @yeild donde va llevar el contenido que escribamos dentro de este.  
+**@include(‘contenido’)** → Incluye el código de otros archivos al archivo que lo está incluyendo.  
+
+
+*Cuando utilizamos @yield y @section, estamos haciendo que Laravel extraiga lo que tenemos dentro del @section y inyecta en el archivo que le indicamos con @extends para al final poner el contenido donde se encuentra el @yield.*
+
+En cambio con @include, Laravel trae el contenido que está en el archivo que incluimos y lo pone en el archivo actual.  
+
+Laravel realmente muestra en el navegador el resultado que el creo con las plantillas blade que hemos creado, este resultado lo guarda en storage → views.  
