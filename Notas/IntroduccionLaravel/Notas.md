@@ -165,3 +165,10 @@ Blade es el sistema de plantillas de Laravel. Todo lo que tiene que ver con vist
 En cambio con @include, Laravel trae el contenido que está en el archivo que incluimos y lo pone en el archivo actual.  
 
 Laravel realmente muestra en el navegador el resultado que el creo con las plantillas blade que hemos creado, este resultado lo guarda en storage → views.  
+
+## componente Laravel/UI
+
+![image](https://user-images.githubusercontent.com/31891276/128647777-d54346db-81d2-4b07-b35f-7693784dee1a.png)
+
+
+
