@@ -76,4 +76,6 @@ Si nuestra clase o interfaz no tiene una especificación clara como **@Service, 
 
 Por otro lado, no es estrictamente necesario que cumplas con colocar una notación especifica, pero es una buena practica.  
 
+![image](https://user-images.githubusercontent.com/31891276/128948237-0fce29e8-751b-46e3-b077-657f9c0c0fc1.png)
 
+![image](https://user-images.githubusercontent.com/31891276/128948250-eb34788b-3ced-4be9-8e5c-634fbe0ee53d.png)
