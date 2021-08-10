@@ -33,3 +33,23 @@ Por ejemplo, las dependencias de un Smartphone serian:
 
 Entonces podemos afirmar que en la definición de un buen diseño de software se debe tener una ALTA COHESIÓN y un BAJO ACOPLAMIENTO.  
 
+## Inversion de Control
+
+![image](https://user-images.githubusercontent.com/31891276/128946951-f018b343-97b8-440c-b98f-58a03225df79.png)
+
+![image](https://user-images.githubusercontent.com/31891276/128946968-2f694fc5-6e4e-430f-9b5c-8c101cd460e5.png)
+
+![image](https://user-images.githubusercontent.com/31891276/128947015-8e8541a4-0696-4bc1-9876-e76234537fd2.png)
+
+### ¿Qué es inyección de dependencias?  
+
+Patrón que utiliza inversión de control para utilizar las dependencias inicializadas con el contenedor Spring.
+
+**Qué es un bean?** Un bean básicamente son módulos desarrollados en Spring estos se encargan de brindarnos toda la lógica que necesitamos para nuestra aplicación. Ejemplo: Si necesitamos referenciar que nuestra clase es un modelo hacemos uso de el bean @entity .   
+Esto nos permite usar propiedades creadas para este tipo de modulo que nos agilizan nuestro desarrollo. Al hacer inversión de control nosotros al llamar esos beans lo que hacemos es referenciar módulos funcionales creados por spring. Spring boot nos facilita el fácil instanciamiento de estos a nuestra aplicación, haciendo todo por nosotros
+
+![image](https://user-images.githubusercontent.com/31891276/128947106-543c8f26-b5b4-4c92-b76c-3e93bb8557ca.png)
+
+
+
+
