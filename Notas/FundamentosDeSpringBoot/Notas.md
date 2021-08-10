@@ -12,12 +12,12 @@
 ## 2. Características principales de Spring Boot
 
 **Independiente:** no tenemos que preocuparnos de las dependencias del core de Spring ni de la compilación de estas.  
-**Incrustado Tomcat, Jetty o Undertow:** Spring Boot trae consigo un servidor web como los tres mencionados donde podemos correr nuestra aplicación sin preocuparnos de generar un artefacto WAR o JAR y desplegarlo nosotros mismos.
-**Proporción de dependencias:** no debemos preocuparnos por las configuraciones de dependencias de terceros o del core de Spring, Spring Boot se encargará de inyectar todo lo necesario.
+**Incrustado Tomcat, Jetty o Undertow:** Spring Boot trae consigo un servidor web como los tres mencionados donde podemos correr nuestra aplicación sin preocuparnos de generar un artefacto WAR o JAR y desplegarlo nosotros mismos.  
+**Proporción de dependencias:** no debemos preocuparnos por las configuraciones de dependencias de terceros o del core de Spring, Spring Boot se encargará de inyectar todo lo necesario.  
 **Sin generación de XML:** No debemos preocuparnos de configuración XML para que nuestra aplicación funcione.
-Métricas de salud del aplicativo: podemos validar el estado de un servicio desplegado, sus dependencias, estado de memoria, magnitud de configuración, etc.
+Métricas de salud del aplicativo: podemos validar el estado de un servicio desplegado, sus dependencias, estado de memoria, magnitud de configuración, etc.  
 
-## Que es una dependencia-
+## Que es una dependencia
 
 Pequeña característica de un objeto especifico, que puede impactar de manera particular en el funcionamiento de una unidad.
 Por ejemplo, las dependencias de un Smartphone serian:
