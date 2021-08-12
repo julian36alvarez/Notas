@@ -79,3 +79,10 @@ Por otro lado, no es estrictamente necesario que cumplas con colocar una notaci√
 ![image](https://user-images.githubusercontent.com/31891276/128948237-0fce29e8-751b-46e3-b077-657f9c0c0fc1.png)
 
 ![image](https://user-images.githubusercontent.com/31891276/128948250-eb34788b-3ced-4be9-8e5c-634fbe0ee53d.png)
+
+## JAVA JPA
+
+![image](https://user-images.githubusercontent.com/31891276/129125931-97926b42-cb4b-4576-be55-8e3ed3ddcfb4.png)
+
+Hibernet es una implementacion de JPA
+
