@@ -140,4 +140,36 @@ Con el operador de referencia vamos a poder llamar métodos de otras clases ya e
             }
         }
         
-  
+ ## 17.  inferencia de tipos
+ 
+ infiere el dato tipado  
+ 
+ ## 18. funciones lambda 
+ 
+ **Sintaxis de lambdas**  
+
+Si la lambda NO recibe argumentos:  
+( ) -> operación  
+
+Si la lambda recibe 1 argumento:  
+_argumento -> operación  
+( argumento ) -> operación_  
+
+Si la lambda recibe mas de 1 argumento:  
+( argumento1, argumento2) -> operación  
+
+Si la lambda recibe varias operaciones:  
+( ) -> { operacion1; return operación2; }  
+argumento -> { operacion1; return operacion2; }  
+( argumento ) -> { operacion1; return operacion2; }  
+( argumento1, argumento2) -> { operacion1; return operacion2 }  
+
+Si la lambda tiene mas de una operación debemos retornar un valor mediante. return
+
+Pero si NO devuelve nada, solo hay que indicar el tipo de entrada vacío.  
+
+( ) -> { operación }  
+
+Para evitar errores es mejor usar  
+( ) -> { operación }  
+para cualquier caso.  
