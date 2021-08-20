@@ -113,5 +113,31 @@ Estas funciones extienden de Function. Quiere decir que tienen el método apply.
 
 **Bifunction** --> 2 parámetros de entrada, se tiene que especificar el tipo de dato. Puede tener diferentes tipos de entradas como también diferente tipo de salida  
 
+## 15 SAM y FunctionalInterface
 
+usar interfaz como funcion, solo se puede un metodo si le agregamosotro metodo da error.
+![image](https://user-images.githubusercontent.com/31891276/130169576-a835c52d-ee5f-4cb0-b978-85c07c196630.png)
 
+## 16. Operador de Referencia
+::  
+
+Con el operador de referencia vamos a poder llamar métodos de otras clases ya establecidos en la aplicación de una forma más sencilla siempre y cuando cumpla las condiciones donde lo vayamos a utilizar
+
+        public class NombresUtils {
+            public static void main(String[] args) {
+                List<String> teachers = getList("Nico", "Juan", "Pepito");
+                Consumer<String> printer = text -> System.out.println(text);
+
+                teachers.forEach(printer);
+                System.out.println("-------");
+                teachers.forEach(e -> System.out.println(e));
+                System.out.println("-------");
+                teachers.forEach(System.out::println);
+            }
+
+            static <T> List<T> getList(T... elements){
+                return Arrays.asList(elements);
+            }
+        }
+        
+  
