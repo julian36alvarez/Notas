@@ -173,3 +173,8 @@ Pero si NO devuelve nada, solo hay que indicar el tipo de entrada vacío.
 Para evitar errores es mejor usar  
 ( ) -> { operación }  
 para cualquier caso.  
+
+## Entendiendo los Streams
+
+![image](https://user-images.githubusercontent.com/31891276/130381065-ab3235dd-ff6c-4a0c-879f-51c8f108581a.png)
+
