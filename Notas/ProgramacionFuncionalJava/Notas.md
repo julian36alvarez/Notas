@@ -252,4 +252,6 @@ Por ejemplo:
 - **Predicate<T>:** toma un dato de tipo T y evalúa si el dato cumple una condición  
 - **Supplier<T>:** no recibe ningún dato, pero genera un dato de tipo T cada vez que es invocado  
 - **UnaryOperator<T>** recibe un dato de tipo T y genera un resultado de tipo T  
+   
+Streams de tipo específico y Paralelismo
     
