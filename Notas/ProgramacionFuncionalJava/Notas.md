@@ -178,3 +178,14 @@ para cualquier caso.
 
 ![image](https://user-images.githubusercontent.com/31891276/130381065-ab3235dd-ff6c-4a0c-879f-51c8f108581a.png)
 
+### ¿Que son los Streams?  
+
+Los Stream se utilizan para procesar colecciones de objetos. Una secuencia es una secuencia de objetos que admite varios métodos que se pueden canalizar para producir el resultado deseado.  
+
+Las características de la secuencia de Java son:  
+
+Un flujo no es una estructura de datos, sino que toma información de las colecciones.  
+  
+Los flujos no cambian la estructura de datos original, solo proporcionan el resultado según los métodos canalizados.  
+
+Cada operación intermedia se ejecuta de forma perezosa y devuelve un flujo como resultado, por lo que se pueden canalizar varias operaciones intermedias. Las operaciones de terminal marcan el final de la secuencia y devuelven el resultado.  
