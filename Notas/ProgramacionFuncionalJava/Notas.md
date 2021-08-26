@@ -223,3 +223,33 @@ reduce: The reduce method is used to reduce the elements of a stream to a single
     List number = Arrays.asList(2,3,4,5); 
     int even = number.stream().filter(x->x%2==0).reduce(0,(ans,i)-> ans+i);
     
+## Lambdas, operaciones y retornos
+
+Usando Stream nos podemos simplificar algunas operaciones, como es el filtrado, el mapeo, conversiones y más. Sin embargo, no es del todo claro cuándo una operación nos devuelve otro Stream para trabajar y cuándo nos da un resultado final…  
+
+¡O al menos no era claro hasta ahora!  
+
+Cuando hablamos de pasar lambdas a una operación de Stream, en realidad, estamos delegando a Java la creación de un objecto basado en una interfaz.
+
+Por ejemplo:  
+
+    Stream<String> coursesStream = Utils.getListOf("Java", "Node.js", "Kotlin").stream();
+
+    Stream<String> javaCoursesStream = coursesStream.filter(course -> course.contains("Java"));
+
+
+    // En realidad, es lo mismo que:
+
+    Stream<String> explicitOperationStream = coursesStream.filter(new Predicate<String>() {
+        public boolean test(String st) {
+            return st.contains("Java");
+        }
+    });
+    
+
+- **Consumer<T>:** recibe un dato de tipo T y no genera ningún resultado  
+- **Function<T,R>:** toma un dato de tipo T y genera un resultado de tipo R  
+- **Predicate<T>:** toma un dato de tipo T y evalúa si el dato cumple una condición  
+- **Supplier<T>:** no recibe ningún dato, pero genera un dato de tipo T cada vez que es invocado  
+- **UnaryOperator<T>** recibe un dato de tipo T y genera un resultado de tipo T  
+    
