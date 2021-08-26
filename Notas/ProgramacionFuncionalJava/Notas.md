@@ -245,13 +245,51 @@ Por ejemplo:
             return st.contains("Java");
         }
     });
-    
 
-- **Consumer<T>:** recibe un dato de tipo T y no genera ningún resultado  
-- **Function<T,R>:** toma un dato de tipo T y genera un resultado de tipo R  
-- **Predicate<T>:** toma un dato de tipo T y evalúa si el dato cumple una condición  
-- **Supplier<T>:** no recibe ningún dato, pero genera un dato de tipo T cada vez que es invocado  
-- **UnaryOperator<T>** recibe un dato de tipo T y genera un resultado de tipo T  
-   
++ **Consumer ** recibe un dato de tipo T y no genera ningún resultado  
++ **Function** toma un dato de tipo T y genera un resultado de tipo R  
++ **Predicate** toma un dato de tipo T y evalúa si el dato cumple una condición  
++ **Supplier** no recibe ningún dato, pero genera un dato de tipo T cada vez que es invocado  
++ **UnaryOperator** recibe un dato de tipo T y genera un resultado de tipo T  
+
+
 Streams de tipo específico y Paralelismo
     
+They should be used when the output of the operation is not needed to be dependent on the order of elements present in source collection (i.e. on which the stream is created)
+
+Parallel Streams can be used in case of aggregate functions
+
+Parallel Streams quickly iterate over the large-sized collections
+
+Parallel Streams can be used if developers have performance implications with the Sequential Streams
+
+If the environment is not multi-threaded, then Parallel Stream creates thread and can affect the new requests coming in
+    
+## Operaciones Terminales
+    
+Las operaciones terminales son aquellas operaciones que como resultado no generan un nuevo Stream. Su resultado puede variar según la operación. La utilidad de estas es poder generar un valor final a todas nuestras operaciones o consumir los datos finales. La razón principal para querer esto es que los datos deberán salir en algún punto de nuestro control y es con las operaciones terminales que hacemos esto.  
+
+Pensemos, por ejemplo, en un servidor web. Recibe una petición de datos, convierte la petición en un Stream, procesa los datos usando filter o map, convierte de JSON a datos locales que sean manipulables por código Java y hace consumo de una base de datos. Todo esto mediante streams de diferentes tipos. Pero eventualmente tiene que devolver una respuesta para quien le hizo la petición.   
+
+¿Qué pasa si quien hizo la petición no esta usando Java? No podemos enviarle un objeto de tipo Stream a un código hecho en Python o en JavaScript… es ahi donde una operación final nos ayuda a convertir nuestro Stream de Java en algún tipo de dato que sea mas comprensible.  
+
+Otro ejemplo claro es si estamos creando una librería o creando código que más gente en nuestro equipo usará. Al crear nuestros métodos y clases usamos streams por aquí y lambdas por allá, pero al exponer estos métodos para uso de otros desarrolladores no podemos obligarlos a usar Stream.  
+
+Las razones son variadas. No queremos obligar y limitar a quienes usen nuestro código a trabajar con un solo tipo dato. No sabemos qué versión de Java está usando quien use nuestro código. No sabemos si Stream está disponible en su parte del código (por ejemplo, en Android no estaba disponible del todo), etc.  
+
+Es por ello que quisiéramos proveer de algo mas simple: listas, primitivos o incluso dar algún mecanismo para poder usar código externo de nuestro lado.  
+
+Las operaciones terminales más comunes que se encuentran en Stream son:  
+
+-anyMatch()
+-allMatch()
+-noneMatch()
+-findAny()
+-findFirst()
+-min()
+-max()
+-reduce()
+-count()
+-toArray()
+-collect()
+-forEach()
