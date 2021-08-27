@@ -86,3 +86,9 @@ Por otro lado, no es estrictamente necesario que cumplas con colocar una notaci√
 
 Hibernet es una implementacion de JPA
 
+![image](https://user-images.githubusercontent.com/31891276/131187172-55b12a0a-5443-4eae-aa71-f2cbbd171dc7.png)
+
+![image](https://user-images.githubusercontent.com/31891276/131197446-2c250a46-7049-4eaf-a895-61908e38775c.png)
+
+
+![image](https://user-images.githubusercontent.com/31891276/131197455-a94e9981-0e19-4982-baf2-078c85543864.png)
