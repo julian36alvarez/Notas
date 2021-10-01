@@ -21,3 +21,17 @@ Hasta hace algún tiempo las aplicaciones web empresariales lucias como el grafi
 https://start.spring.io/
 
 ![image](https://user-images.githubusercontent.com/31891276/135556303-49281ee5-f8aa-457a-937b-0eddbb8bc43e.png)
+
+
+Project:
+
+Los projectos Maven gestionan las dependencias con archivos XML  
+
+Los archivos Gradle son escritos en Groovy y permite crear tareas que se pueden ejecutar al momento de hacer despliegue o integración continua
+
+Utilizar la version estable de spring boot y llenar los metadatos  
+
+Spring Web: permite genera APIs rest utilizando Apache Tomcat como servidor por defecto  
+build.gradle: Es donde etsta escrita toda la configuración del proyecto (plugins, version de Java, dependencias, software para pruebas etc.)  
+Carpeta gradle: Archivos necesarios para que gradle funcione  
+@SpringBootApplication: indica la clase que gestiona la aplicación  
