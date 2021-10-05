@@ -92,6 +92,9 @@ Spring data nos provee de respositorios sin codigo, nos permiten hacer todo tipo
 
 También nos provee de auditorías transparentes, por ello, posee un motor de auditorias que nos permite saber cuadno se insertó un registro, cuando se borró, cuando se actualizo en la BD, etc.  
 
+![image](https://user-images.githubusercontent.com/31891276/135948876-0bc544dc-8ea9-4cbd-9655-90f574f4da60.png)  
+
+
 
 
 
