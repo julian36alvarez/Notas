@@ -35,3 +35,11 @@ Spring Web: permite genera APIs rest utilizando Apache Tomcat como servidor por 
 build.gradle: Es donde etsta escrita toda la configuración del proyecto (plugins, version de Java, dependencias, software para pruebas etc.)  
 Carpeta gradle: Archivos necesarios para que gradle funcione  
 @SpringBootApplication: indica la clase que gestiona la aplicación  
+
+
+## Configurar Spring Boot  
+
+![image](https://user-images.githubusercontent.com/31891276/135946165-0543a167-19b1-4052-892e-42ec27db2b4a.png)  
+
+
+
