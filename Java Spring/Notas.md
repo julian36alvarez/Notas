@@ -79,6 +79,18 @@ JPA utiliza anotaciones para conectar clases a tablas de la BD y asi evitar hace
 ![image](https://user-images.githubusercontent.com/31891276/135948298-dc750587-d363-4510-ad93-94e5fe69e91e.png)
 
 
+![image](https://user-images.githubusercontent.com/31891276/135948381-76fc0cd1-adb7-43a6-ba34-2e1728067906.png)
+
+
+Spring Data NO es una implementacion de JPA, sino mas bien es un proyecto que usa JPA para ofrecer funcionalidaes extra en la gestion de tareas desde JAVA a las base de datos.  
+
+Spring Data internamente tiene varios subproyectos, entre ellos: Spring Data JPA y Spring Data JDBC, para conectarnos a BD relacionales (SQL). Spring Data MongoDB y Spring Data Cassandra, son proyectos para conectarnos a BD no relacionales.  
+
+La tarea principal de Spring Data es optimizar tareas repitivas.  
+
+Spring data nos provee de respositorios sin codigo, nos permiten hacer todo tipo de operaciones en BD (CRUD) sin utilizar una linea de código.  
+
+También nos provee de auditorías transparentes, por ello, posee un motor de auditorias que nos permite saber cuadno se insertó un registro, cuando se borró, cuando se actualizo en la BD, etc.  
 
 
 
