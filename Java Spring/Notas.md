@@ -41,5 +41,5 @@ Carpeta gradle: Archivos necesarios para que gradle funcione
 
 ![image](https://user-images.githubusercontent.com/31891276/135946165-0543a167-19b1-4052-892e-42ec27db2b4a.png)  
 
-
+https://docs.spring.io/spring-boot/docs/current/reference/html/application-properties.html
 
