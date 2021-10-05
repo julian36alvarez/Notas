@@ -73,6 +73,12 @@ JPA utiliza anotaciones para conectar clases a tablas de la BD y asi evitar hace
 
 **@OneToMany and @MatyToOne.** Representar relaciones  
 
+![image](https://user-images.githubusercontent.com/31891276/135948282-aee8aab0-855f-42ac-b047-99b0d240b914.png)
+
+
+![image](https://user-images.githubusercontent.com/31891276/135948298-dc750587-d363-4510-ad93-94e5fe69e91e.png)
+
+
 
 
 
