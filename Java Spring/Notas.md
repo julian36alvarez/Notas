@@ -100,3 +100,5 @@ También nos provee de auditorías transparentes, por ello, posee un motor de au
 
 ![image](https://user-images.githubusercontent.com/31891276/137649634-deb205f5-0261-4977-8524-907cc623ae38.png)
 
+![image](https://user-images.githubusercontent.com/31891276/137649655-afd9005e-25fc-45fc-a8f5-b9e704b9d518.png)
+
