@@ -129,3 +129,32 @@ boolean
       countries where country_name ='Korea';
       DELETE from countries where country_id=v_country_id;
       END;
+## Funciones
+
+UPPER() -- mayusculas
+Lowwer
+
+      DECLARE
+      v_last_name VARCHAR2(25);
+      BEGIN
+      select last_name
+      into v_last_name
+      from employees
+      where employee_id=100;
+      dbms_output.put_line(v_last_name);
+      END;
+      
+**Fecha**
+
+      DECLARE
+      v_fecha date;
+      v_fecha2 date;
+      BEGIN
+      v_fecha := sysdate;
+      v_fecha2 := LAST_DAY(v_fecha);
+      DBMS_OUTPUT.put_line(v_fecha);
+      DBMS_OUTPUT.put_line(v_fecha2);
+      END;
+      
+nvl()-- if null then;
+to_char();
