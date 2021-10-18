@@ -470,3 +470,32 @@ Con parametros:
       end loop;
       END;
 
+Update cursor
+
+
+
+      DECLARE
+      cursor empleados is
+      select e.*
+      from employees e
+      where e.hire_date <= date'2005-12-31' and e.commission_pct is null
+      for update;
+      v_porcentaje_comision  number;
+      BEGIN
+
+          for emp in empleados loop
+             v_porcentaje_comision :=0;
+              if emp.salary BETWEEN 1000 and 5000 then
+                v_porcentaje_comision := 0.1;
+              elsif emp.salary BETWEEN 5001 and 10000 then
+                v_porcentaje_comision := 0.2;
+              elsif emp.salary > 10000  then
+                v_porcentaje_comision := 0.3;
+              end if; 
+              DBMS_OUTPUT.put_line('Empleado: '||emp.first_name||' Apellido: '||emp.last_name||' con id: '||emp.employee_id||' Clifica para comision');
+              DBMS_OUTPUT.put_line('$ Comision: '||v_porcentaje_comision || '%');
+
+              update employees set commission_pct = v_porcentaje_comision
+              where current of empleados;
+          end loop;
+      END;
