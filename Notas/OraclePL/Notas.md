@@ -256,3 +256,34 @@ set SERVEROUT on
           DBMS_OUTPUT.put_line('Empleado de categoria B');
       end if;
       END; 
+
+
+## Loop
+
+      DECLARE
+      v_contador number := 0;
+      BEGIN
+      loop
+          v_contador := v_contador+1;
+          DBMS_OUTPUT.PUT_LINE('El numero es :' || v_contador);
+          if v_contador = 7 then
+              exit;
+          end if;
+
+      end loop;    
+
+      END;
+      
+**exit when    ** 
+
+      DECLARE
+      v_contador number := 0;
+      BEGIN
+      loop
+          v_contador := v_contador+1;
+          DBMS_OUTPUT.PUT_LINE('El numero es :' || v_contador);
+          exit when v_contador = 7;
+
+      end loop;    
+
+      END;
