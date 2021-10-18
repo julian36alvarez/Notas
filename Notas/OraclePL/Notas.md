@@ -61,3 +61,34 @@ boolean
     DBMS_OUTPUT.PUT_LINE('Nacimiento: '|| f_nacimiento);
     END;
   
+  
+  ## Select Into
+  
+      DECLARE
+      v_name varchar(15);
+
+      BEGIN
+      SELECT e.last_name 
+      INTO v_name
+      from employees e where e.employee_id = 100;
+      DBMS_OUTPUT.put_line(v_name);
+      END;
+      
+   multiple variables
+   
+      DECLARE
+      v_last_name varchar(15);
+      v_first_name VARCHAR(15);
+      salary NUMBER;
+      BEGIN
+      SELECT e.last_name, e.first_name, e.salary
+      INTO v_last_name, v_first_name, salary
+      from employees e where e.employee_id = 100;
+      DBMS_OUTPUT.put_line(v_last_name);
+      DBMS_OUTPUT.put_line(v_first_name);
+      DBMS_OUTPUT.put_line(salary);
+      END;
+      
+
+      
+   
