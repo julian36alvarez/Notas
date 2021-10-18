@@ -227,4 +227,32 @@ to_char();
       
 set SERVEROUT on
 
+## IF:
 
+
+      DECLARE
+      v_edad number;
+      BEGIN
+      v_edad :=18;
+      if v_edad >= 18 then
+        DBMS_OUTPUT.put_line('Es mayor de edad');
+      else
+          DBMS_OUTPUT.put_line('No Es mayor de edad');
+      end if;
+      END;
+ 
+ Other     
+      
+     DECLARE
+      v_salary number;
+      BEGIN
+      select e.salary
+      into v_salary
+      from employees e
+      where e.employee_id =200;
+      if v_salary >1000 and v_salary > 5000 then
+        DBMS_OUTPUT.put_line('Empleado de categoria C');
+      else
+          DBMS_OUTPUT.put_line('Empleado de categoria B');
+      end if;
+      END; 
