@@ -209,6 +209,22 @@ to_char();
 
       END;
       
+**UPDATE**
+
+      DECLARE
+      v_jov jobs%rowtype;
+
+      BEGIN
+
+      v_jov.job_id := 'DBA';
+      v_jov.job_title := 'Administrator DBA';
+      v_jov.min_salary := 6000;
+      v_jov.max_salary := 11000;
+
+      UPDATE jobs SET ROW = v_jov WHERE job_id = 'DBA';
+
+      END;
+      
 
 
 
