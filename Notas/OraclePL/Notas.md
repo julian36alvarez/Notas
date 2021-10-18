@@ -158,3 +158,41 @@ Lowwer
       
 nvl()-- if null then;
 to_char();
+
+
+** % Type**
+
+      DECLARE
+      v_job_id employees.job_id%type;
+
+      BEGIN
+
+      select e.job_id 
+      into v_job_id
+      from employees e where e.employee_id =134;
+      DBMS_OUTPUT.put_line(v_job_id);
+
+      END;
+
+**% row type**
+
+      DECLARE
+      v_jov jobs%rowtype;
+      v_desc jobs.job_title%type;
+      v_mi_salary jobs.max_salary%type;
+      BEGIN
+
+      select j.*
+      INTO v_jov
+      from jobs j where j.job_id = 'IT_PROG';
+
+      v_desc :=v_jov.job_title;
+      v_mi_salary := v_jov.max_salary;
+      DBMS_OUTPUT.put_line('Para el trabajo con titulo ' || v_desc ||' el salario minimo es: '||v_mi_salary);
+
+      END;
+
+
+
+
+
