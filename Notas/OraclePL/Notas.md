@@ -318,4 +318,115 @@ set SERVEROUT on
        end loop;
       END;
       
+## For
+
+      DECLARE
+      v_texto varchar(25);
+      v_contador number := 0;
+      BEGIN
+
+      v_texto := 'El valor del numero es:'  ;
+      for numero in 1..7 loop 
+          DBMS_OUTPUT.PUT_LINE(v_texto || numero);
+       end loop;
+      END;
       
+   # Cursores
+   
+   trabajan sobre el contex area, que es el area de memoria privada de oracle.
+   
+   
+   Cursores implicitos: son creados automaticamente por oracle DML (Insert , update, delete)
+   
+   SQL%Found devuelve true  
+   SQL%NoFound devuelve true   
+   SQL%rowcount Devuelve el numero de filas devuelto o afectado.
+   
+      DECLARE
+      v_cantidad number;
+      v_afecto boolean;
+      v_afecto_txt VARCHAR(25);
+      BEGIN
+      update employees e
+      set e.salary = e.salary *1.5
+      where e.department_id=20;
+
+      v_cantidad := SQL%ROWCOUNT;
+      v_afecto := sql%found;
+
+      case v_afecto
+      when true then v_afecto_txt := 'si';
+      when false then v_afecto_txt := 'no';
+      end case;
+      DBMS_OUTPUT.put_line(v_afecto_txt);
+      DBMS_OUTPUT.put_line(v_cantidad);
+
+      END;
+      
+      
+  xxx
+  
+      DECLARE
+      v_cantidad number;
+      v_afecto boolean;
+      v_afecto_txt VARCHAR(25);
+      v_salario employees.salary%TYPE;
+      BEGIN
+      update employees e
+      set e.salary = e.salary *1.5
+      where e.department_id=453528;
+
+      v_cantidad := SQL%ROWCOUNT;
+      v_afecto := sql%found;
+
+      case v_afecto
+      when true then v_afecto_txt := 'si';
+      when false then v_afecto_txt := 'no';
+      end case;
+      DBMS_OUTPUT.put_line(v_afecto_txt);
+      DBMS_OUTPUT.put_line(v_cantidad);
+
+      select  e.salary
+      into v_salario
+      from employees e where e.employee_id=201;
+      v_cantidad := SQL%ROWCOUNT;
+      v_afecto := sql%found;
+      case v_afecto
+      when true then v_afecto_txt := 'si';
+      when false then v_afecto_txt := 'no';
+      end case;
+      DBMS_OUTPUT.put_line(v_afecto_txt);
+      DBMS_OUTPUT.put_line(v_cantidad);
+      DBMS_OUTPUT.put_line(v_salario);
+      END;
+   
+## Cursores Explicitos.
+
+
+![image](https://user-images.githubusercontent.com/31891276/137813715-865db5d4-5467-484b-b033-0389032b4425.png)
+
+![image](https://user-images.githubusercontent.com/31891276/137813727-55e233ec-629e-414f-9ea8-bab40c896d26.png)
+
+![image](https://user-images.githubusercontent.com/31891276/137813737-14c41c1b-ba41-48b0-b090-f611f40d7e4a.png)
+
+
+DECLARE
+cursor empleados is
+select e.first_name, e.last_name, e.hire_date
+from employees e
+where e.hire_date BETWEEN DATE'2002-01-01' and date'2002-12-31';
+v_nombre VARCHAR(25);
+v_apellido varchar(25);
+v_contratacion date;
+BEGIN
+
+open empleados;
+
+loop 
+FETCH empleados into v_nombre,v_apellido,v_contratacion;
+
+exit when empleados%notfound;
+DBMS_OUTPUT.put_line('Nombre: '||v_nombre||' Apellido: '||v_apellido||' Contratacion: '||v_contratacion);
+end loop;
+close empleados;
+END;
