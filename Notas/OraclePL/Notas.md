@@ -274,7 +274,7 @@ set SERVEROUT on
 
       END;
       
-**exit when    ** 
+**exit when** 
 
       DECLARE
       v_contador number := 0;
@@ -287,3 +287,35 @@ set SERVEROUT on
       end loop;    
 
       END;
+
+
+## Continue: 
+
+      DECLARE
+      v_contador number := 0;
+      BEGIN
+      loop
+          v_contador := v_contador+1;
+
+          if v_contador = 3 then 
+              continue;
+          end if;
+          DBMS_OUTPUT.PUT_LINE('El numero es :' || v_contador);
+          exit when v_contador = 7;
+
+      end loop;    
+
+      END;
+   
+## While
+
+      DECLARE
+      v_contador number := 0;
+      BEGIN
+      while v_contador < 7  loop 
+          v_contador := v_contador+1;
+          DBMS_OUTPUT.PUT_LINE('El numero es :' || v_contador);
+       end loop;
+      END;
+      
+      
