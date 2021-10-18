@@ -499,3 +499,26 @@ Update cursor
               where current of empleados;
           end loop;
       END;
+
+
+## EXCEPTIONS
+
+            DECLARE
+            v_busqueda employees.first_name%TYPE;
+            v_telefono employees.phone_number%TYPE;
+            BEGIN
+            v_busqueda := 'DEDED';
+            select e.phone_number
+            into v_telefono
+            from employees e
+            where e.first_name = v_busqueda;
+            DBMS_OUTPUT.PUT_LINE('el telefono es: '|| v_telefono);
+            EXCEPTION
+            WHEN TOO_MANY_ROWS THEN
+            DBMS_OUTPUT.PUT_LINE('VERIFIQUE EL NUMERO DE FILAS');
+            WHEN NO_DATA_FOUND THEN
+            DBMS_OUTPUT.PUT_LINE('VERIFIQUE EL NOMBRE');
+            END;
+            
+
+
