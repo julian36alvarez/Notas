@@ -90,5 +90,39 @@ boolean
       END;
       
 
-      
+   ## Update Inster Delete.
    
+      DECLARE
+      v_salario_max number;
+      BEGIN
+      SELECT MAX(salary) into v_salario_max
+      from employees;
+      DBMS_OUTPUT.put_line(v_salario_max);
+      update employees set salary = 23500 where salary = v_salario_max;
+      END;
+      
+**insert**
+ 
+            DECLARE
+            v_region_id number;
+            v_contry_name varchar(10);
+            BEGIN
+            select region_id 
+            into v_region_id
+            from regions where region_name = 'Asia';
+
+            v_contry_name := 'Korea';
+            insert into countries (country_id,country_name,region_id) values ('KR',v_contry_name, v_region_id);
+            END;
+
+**Deleted**
+
+      DECLARE
+      v_country_id VARCHAR(2);
+      BEGIN
+      SELECT country_id 
+      into v_country_id 
+      FROM 
+      countries where country_name ='Korea';
+      DELETE from countries where country_id=v_country_id;
+      END;
