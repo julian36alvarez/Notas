@@ -410,23 +410,63 @@ set SERVEROUT on
 ![image](https://user-images.githubusercontent.com/31891276/137813737-14c41c1b-ba41-48b0-b090-f611f40d7e4a.png)
 
 
-DECLARE
-cursor empleados is
-select e.first_name, e.last_name, e.hire_date
-from employees e
-where e.hire_date BETWEEN DATE'2002-01-01' and date'2002-12-31';
-v_nombre VARCHAR(25);
-v_apellido varchar(25);
-v_contratacion date;
-BEGIN
+      DECLARE
+      cursor empleados is
+      select e.first_name, e.last_name, e.hire_date
+      from employees e
+      where e.hire_date BETWEEN DATE'2002-01-01' and date'2002-12-31';
+      v_nombre VARCHAR(25);
+      v_apellido varchar(25);
+      v_contratacion date;
+      BEGIN
 
-open empleados;
+      open empleados;
 
-loop 
-FETCH empleados into v_nombre,v_apellido,v_contratacion;
+      loop 
+      FETCH empleados into v_nombre,v_apellido,v_contratacion;
 
-exit when empleados%notfound;
-DBMS_OUTPUT.put_line('Nombre: '||v_nombre||' Apellido: '||v_apellido||' Contratacion: '||v_contratacion);
-end loop;
-close empleados;
-END;
+      exit when empleados%notfound;
+      DBMS_OUTPUT.put_line('Nombre: '||v_nombre||' Apellido: '||v_apellido||' Contratacion: '||v_contratacion);
+      end loop;
+      close empleados;
+      END;
+      
+      
+   Cursor con for:
+   
+   
+      DECLARE
+      cursor empleados is
+      select e.first_name, e.last_name, e.hire_date
+      from employees e
+      where e.hire_date BETWEEN DATE'2002-01-01' and date'2002-12-31';
+
+      BEGIN
+      for reg in empleados loop
+      DBMS_OUTPUT.put_line('Nombre: '||reg.first_name||' Apellido: '||reg.last_name||' Contratacion: '||reg.hire_date);
+      end loop;
+      END;
+      
+      
+Con parametros:
+
+      DECLARE
+      cursor empleados(p_desde date, p_hasta date) is
+      select e.first_name, e.last_name, e.hire_date
+      from employees e
+      where e.hire_date BETWEEN p_desde and p_hasta;
+      v_desde date;
+      v_hasta date;
+      BEGIN
+      v_desde := date'2002-01-01';
+
+      select max(hire_date)
+      into v_hasta
+      from employees
+      where department_id = 100;
+      --v_hasta := date'2003-12-31';
+      for reg in empleados(v_desde,v_hasta) loop
+      DBMS_OUTPUT.put_line('Nombre: '||reg.first_name||' Apellido: '||reg.last_name||' Contratacion: '||reg.hire_date);
+      end loop;
+      END;
+
