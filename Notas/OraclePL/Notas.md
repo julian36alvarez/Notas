@@ -193,6 +193,22 @@ to_char();
       END;
 
 
+**Insert**
+
+      DECLARE
+      v_jov jobs%rowtype;
+
+      BEGIN
+
+      v_jov.job_id := 'DBA';
+      v_jov.job_title := 'Administrator DBA';
+      v_jov.min_salary := 5000;
+      v_jov.max_salary := 11000;
+
+      insert into jobs VALUES v_jov;
+
+      END;
+      
 
 
 
