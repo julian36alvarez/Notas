@@ -225,6 +225,6 @@ to_char();
 
       END;
       
-
+set SERVEROUT on
 
 
