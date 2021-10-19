@@ -520,5 +520,103 @@ Update cursor
             DBMS_OUTPUT.PUT_LINE('VERIFIQUE EL NOMBRE');
             END;
             
+ # Funciones
+ 
+       create or REPLACE FUNCTION pedidos_pendientes return VARCHAR2
+      is 
+      v_cantidad number;
+      begin
+      select count(*) into v_cantidad
+      from pedidos where fechaentregado is null;
+      return v_cantidad;
+      end;
+      
+
+## Funciones con parametros.
 
 
+      CREATE or replace function calcular_valor_pedido(p_idpedido number)
+      RETURN number is
+
+          cursor articulos(v_idpedido number) is
+          select pa.cantidad, a.precio
+          from pedidos_articulos pa
+          inner join articulos a on a.idarticulo = pa.idarticulo
+          where pa.idpedido =v_idpedido;
+
+          v_total number := 0;
+          v_porcentaje_costo_entrega number;
+          v_costo_entrega number;
+          begin
+
+          select c.costoentrega
+          into v_porcentaje_costo_entrega
+          from canales_venta c
+          inner join pedidos p on c.idcanalventa = p.idcanalventa
+          where p.idpedido = p.idpedido;
+
+              for art in articulos(p_idpedido) loop
+                  v_total:= v_total+(art.precio*art.cantidad);
+              end loop;
+          v_costo_entrega := (v_porcentaje_costo_entrega*v_total) /100;   
+          v_total := v_total + v_costo_entrega;
+
+          exception when OTHERS then
+
+          DBMS_OUTPUT.PUT_LINE('Hubo un error');
+      end;
+
+
+usando la funcion
+
+      select calcular_valor_pedido(2)
+      from dual;
+      
+      
+![image](https://user-images.githubusercontent.com/31891276/137826671-7680af9b-bdbb-4182-a199-09dd01af782c.png)
+
+  ó
+  
+      select p.*, calcular_valor_pedido(p.idpedido) from pedidos p  
+      
+![image](https://user-images.githubusercontent.com/31891276/137826740-effc3e9e-302b-487c-a5f9-43e47faa2082.png)
+
+
+      create or replace procedure ordenar_a_fabrica is
+
+      cursor articulos is
+      select a.idarticulo, a.stock,a.idsucursal
+      from articulos_sucursales a;
+      v_mejorprecio number;
+      v_idfabricante number;
+      v_siguiente_id number;
+      begin
+
+          for art in articulos loop
+
+              if art.stock = 0 then
+               select min (precio)
+               into v_mejorprecio
+               from articulos_fabricantes af
+               where af.idarticulo = art.idarticulo
+               group by idarticulo;
+
+               select af.idfabricante
+               into v_idfabricante
+               from articulos_fabricantes af
+               where af.idarticulo = v_mejorprecio;
+
+               select max(idpedidofabrica)+1
+               into v_siguiente_id 
+               from pedido_fabrica;
+
+               insert into pedido_fabrica (idpedidofabrica,idsucursal,idarticulo,idfabricante,fechapedido,cantidad)
+               values(v_siguiente_id,art.idsucursal, art.idarticulo,v_idfabricante,sysdate,10);
+
+               end if;
+           end loop;
+       end;
+ 
+ 
+ 
+  
