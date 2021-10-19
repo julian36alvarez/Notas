@@ -689,3 +689,15 @@ usando la funcion
 
       end;
   
+## Triggers
+
+
+![image](https://user-images.githubusercontent.com/31891276/137947930-22e98c41-bfda-439e-a379-6324c2eb6180.png)
+
+![image](https://user-images.githubusercontent.com/31891276/137947985-8f3535ef-eb45-424c-8a5e-18cde234f9ed.png)
+
+![image](https://user-images.githubusercontent.com/31891276/137948032-b0ce5d5b-0ffd-4823-977f-c96a5eb65d9c.png)
+
+
+
+
