@@ -619,4 +619,8 @@ usando la funcion
  
  
  
+  ![image](https://user-images.githubusercontent.com/31891276/137832090-e3350515-d345-4f53-b324-990208a94d7d.png)
   
+  ![image](https://user-images.githubusercontent.com/31891276/137832117-65110d5f-0e85-4349-a56e-ed54cf417248.png)
+
+
