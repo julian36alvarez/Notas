@@ -109,4 +109,5 @@ También nos provee de auditorías transparentes, por ello, posee un motor de au
 
 https://mapstruct.org/
 
+![image](https://user-images.githubusercontent.com/31891276/138384047-1fbffdf6-d1df-4334-bd5b-c72d223a53e1.png)
 
