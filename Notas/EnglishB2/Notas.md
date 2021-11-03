@@ -5,11 +5,11 @@
 
 "yet" is only for two things questions and negative sentences.
 
-I have just had breakfast.
+At 6:00 AM I have just had breakfast.
 
-I have already Done my work report.
+At 6:00 PM I have already Done my work report.
 
-I haven't Done my work report yet .
+At 5:00 PM I haven't Done my work report yet .
 
 I have just had lunch.
 
