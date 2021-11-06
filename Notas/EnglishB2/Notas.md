@@ -11,14 +11,25 @@ At 6:00 PM I have already Done my work report.
 
 At 5:00 PM I haven't Done my work report yet .
 
-I have just had lunch.
+At 2:00 PM I have just had lunch.
 
-I have just finished my english class.
+At 8:00 AM I have just finished my english class.
 
-I have just woken up.
+At 5:00 AM I have just woken up.
 
-I have just finished my work.
+At 6:00 PM I have just finished my work.
 
-I have alredy reades the books .
+At 7:00 PM I have alredy reades my books of star wars .
 
-I have just slept .
+At 4:00 AM I have just slept .
+
+At 8:00 AM Ricardo has just finished his english class.
+
+At 5:00 AM Ricardo has just woken up.
+
+At 8:00 AM Luis has just finished his english class.
+
+At 2:00 PM Luis has just had lunch.
+
+At 4:00 AM Luis has just slept .
+
