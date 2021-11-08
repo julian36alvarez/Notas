@@ -58,3 +58,7 @@ Trabajan haciendo APIs, eTLs, conectores y las herramientas más usadas son SQl 
 - R -> tiene un enfoque más estadístico basado en la econometría.
 - Es más complejo. Análisis descriptivo y exploratorio.
 - Python -> basado en la ingeniería. Es parecido a otros lenguajes. Análisis descriptivo y exploratorio.
+
+
+![image](https://user-images.githubusercontent.com/31891276/140671325-7eec7b39-3fea-4153-81a5-af4ebc1636bf.png)
+
