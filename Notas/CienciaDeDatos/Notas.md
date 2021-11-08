@@ -46,3 +46,5 @@ Trabajan haciendo APIs, eTLs, conectores y las herramientas más usadas son SQl 
 
 - Data Translator ->persona que pueda interpretar los datos y pueda comunicarnos con los otros equipos de negocios.Experto en la necesidad de negocio.
 
+
+![image](https://user-images.githubusercontent.com/31891276/140668743-ac3b043e-9ec3-4d15-aa08-82de97060fb5.png)
