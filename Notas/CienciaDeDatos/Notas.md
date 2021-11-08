@@ -62,3 +62,4 @@ Trabajan haciendo APIs, eTLs, conectores y las herramientas más usadas son SQl 
 
 ![image](https://user-images.githubusercontent.com/31891276/140671325-7eec7b39-3fea-4153-81a5-af4ebc1636bf.png)
 
+![image](https://user-images.githubusercontent.com/31891276/140673305-fee89f43-d825-4439-b9fe-e0f4e7d8633a.png)
