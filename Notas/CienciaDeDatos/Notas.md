@@ -63,3 +63,6 @@ Trabajan haciendo APIs, eTLs, conectores y las herramientas más usadas son SQl 
 ![image](https://user-images.githubusercontent.com/31891276/140671325-7eec7b39-3fea-4153-81a5-af4ebc1636bf.png)
 
 ![image](https://user-images.githubusercontent.com/31891276/140673305-fee89f43-d825-4439-b9fe-e0f4e7d8633a.png)
+
+
+La minería de textos es una rama específica de la minería de datos que se refiere al proceso de analizar y derivar información nueva de textos. Por medio de la identificación de patrones o correlaciones entre los términos se logra encontrar información que no está explícita dentro del texto. Los textos que se usan como recursos pueden ser páginas web, libros, correos electrónicos, reseñas de clientes, artículos, entre otros.
