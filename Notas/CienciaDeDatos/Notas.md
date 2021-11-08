@@ -48,3 +48,13 @@ Trabajan haciendo APIs, eTLs, conectores y las herramientas más usadas son SQl 
 
 
 ![image](https://user-images.githubusercontent.com/31891276/140668743-ac3b043e-9ec3-4d15-aa08-82de97060fb5.png)
+
+
+## Herramientas para cada etapa del análisis de datos.
+
+- Extracción de información con SQL.  
+- Sintetiza una base de datos, sirve para entregar un cuadro de control de la operación.  
+- Analisis y visualizacion con R y Python
+- R -> tiene un enfoque más estadístico basado en la econometría.
+- Es más complejo. Análisis descriptivo y exploratorio.
+- Python -> basado en la ingeniería. Es parecido a otros lenguajes. Análisis descriptivo y exploratorio.
