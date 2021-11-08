@@ -27,3 +27,22 @@ Al utilizar redes neuronales de gran profundidad, el aprendizaje automático se 
 
 Entrena a una computadora para que realice tareas, como el reconocimiento del habla, la identificación de imágenes o hacer predicciones.
 El deep learning configura parámetros básicos acerca de los datos y entrena a la computadora para que aprenda por cuenta propia reconociendo patrones mediante el uso de muchas capas de procesamiento.
+
+
+
+![image](https://user-images.githubusercontent.com/31891276/140668698-ba90a39d-8a55-4f0a-ada0-d2d0bb7e26ca.png)
+
+Flujo de trabajo en ciencia de datos: fases, roles y oportunidades laborales  
+  
+ROLES DE DATOS  
+  
+-Ing. de datos -> hace la coneccion entre el dispositivo y la creación de una base de datos.
+  
+Trabajan haciendo APIs, eTLs, conectores y las herramientas más usadas son SQl y NoSQL
+  
+-Analista Business Intelligence ->a partir de la información que creo el ing. de datos extrae la información que le interesa, crea cuadros de control, automatiza estos procedimientos y las herramientas más usadas son SQL y Excel.
+  
+-Data Scientist-> sabe el rol del analista, extraer la información, y sabe predecir. Las herramientas más usadas son R y Python.
+
+-Data Translator ->persona que pueda interpretar los datos y pueda comunicarnos con los otros equipos de negocios.Experto en la necesidad de negocio.
+
