@@ -21,3 +21,9 @@
 
 Inteligencia Artificial es la capacidad de las computadoras de mostrar un comportamiento “inteligente”. Mientras que Machine Learning es una de técnica que se utiliza para crear y mejorar dicho comportamiento. Esto mediante entrenamientos automáticos basados en la exposición a datos.
 Al utilizar redes neuronales de gran profundidad, el aprendizaje automático se convierte en aprendizaje profundo.
+
+
+# Deep learning.
+
+Entrena a una computadora para que realice tareas, como el reconocimiento del habla, la identificación de imágenes o hacer predicciones.
+El deep learning configura parámetros básicos acerca de los datos y entrena a la computadora para que aprenda por cuenta propia reconociendo patrones mediante el uso de muchas capas de procesamiento.
