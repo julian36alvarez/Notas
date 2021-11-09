@@ -36,9 +36,9 @@ At 4:00 AM Luis has just slept .
 
 ++++++++++++++++++++++++++++++++++++++++++
 
-If I win some money, I will buy a new computer.
+If I win some money, I will buy a new computer.      As soon as I win some money, I will take a shower.
 
-I will be happy if i see my mother.
+I will be happy if i see my mother.   
 
 If the weather is nice, i will go to the beach.
 
