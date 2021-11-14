@@ -129,3 +129,12 @@ Para iterar alguno de estos será necesario utilizar la interface Iterator y par
 
 ![image](https://user-images.githubusercontent.com/31891276/141702174-4cac32e5-9dfe-49bd-bc9a-0172c17fc55c.png)
 
+
+# JDBC 
+
+Clases:  
++ DriverManager: Nos permite crear una instancia de la conexión
++ Connection: Genera la sesión, maneja todo el ciclo de vida de una sesión cuando nos conectamos a una base de datos.
++ Statement: Nos ayuda a traer datos de una tabla.
++ PreparedStatement: Hace lo mismo que Statement con la diferencia de que éste nos permite recibir parámetros para la clausula where.
++ ResultSet: Es una interfaz que nos ayudará a manejar los datos obtenidos convirtiendo los datos en objetos.
