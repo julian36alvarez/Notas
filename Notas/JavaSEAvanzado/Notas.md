@@ -70,4 +70,5 @@ Lo primero que debes saber es que tiene tres implementaciones:
 + HashMap
 + SortedMap ➡️ TreeMap
 
+![image](https://user-images.githubusercontent.com/31891276/141701621-d8a970a1-3c74-4269-b919-9f5170d40ae2.png)
 
