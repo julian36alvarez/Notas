@@ -49,7 +49,7 @@ No crearemos instancias.
 + Se piensa en una clase abstracta cuando el enfoque es más en objetos (de las subclases).
 + Se pueden encontrar clases como Figure que se pueden crear clases como Circle, Square, Triangle.
 
-"" Interfaces:
+## Interfaces:
 
 + Nuevos modificadores de acceso (default y private). Esto permite añadir comportamiento a los métodos.
 + Se podrán definir métodos con implementación y sin implementación.
