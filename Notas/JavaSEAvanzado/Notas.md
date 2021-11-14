@@ -124,4 +124,7 @@ Para iterar alguno de estos será necesario utilizar la interface Iterator y par
     
 
 
+![image](https://user-images.githubusercontent.com/31891276/141701787-1efd837d-8f16-4ccf-95de-b3c09e4365c2.png)
+
+
 
