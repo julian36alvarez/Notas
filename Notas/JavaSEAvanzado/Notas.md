@@ -62,3 +62,12 @@ No crearemos instancias.
 
 ![image](https://user-images.githubusercontent.com/31891276/141701592-a8bbd943-aaf0-4264-8b2a-660af77984e6.png)
 
+
+Lo primero que debes saber es que tiene tres implementaciones:
+
++ HashTable
++ LinkedHashMap
++ HashMap
++ SortedMap ➡️ TreeMap
+
+
