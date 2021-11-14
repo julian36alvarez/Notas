@@ -58,3 +58,7 @@ No crearemos instancias.
 + Se piensa en una interface cuando el enfoque es más en las acciones que pueden tener en común muchos objetos.
 + Se encuentra acciones como Drawable Dibujable, Runnable Ejecutable, Callable Llamable, Visualizable Visualizable.
 + Una buena práctica es que el diseño de las aplicaciones siempre esté orientado a interfaces y no a la implementación. Crear buenas abstracciones. Encontrar el comportamiento común. Enfocarse en la declaración de los métodos.
+
+
+![image](https://user-images.githubusercontent.com/31891276/141701592-a8bbd943-aaf0-4264-8b2a-660af77984e6.png)
+
