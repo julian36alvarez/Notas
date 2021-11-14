@@ -138,3 +138,7 @@ Clases:
 + Statement: Nos ayuda a traer datos de una tabla.
 + PreparedStatement: Hace lo mismo que Statement con la diferencia de que éste nos permite recibir parámetros para la clausula where.
 + ResultSet: Es una interfaz que nos ayudará a manejar los datos obtenidos convirtiendo los datos en objetos.
+
+
+![image](https://user-images.githubusercontent.com/31891276/141702531-b8f5dd35-9a1f-4b10-a20e-08cec892e5d9.png)
+
