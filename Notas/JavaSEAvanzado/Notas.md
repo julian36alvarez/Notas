@@ -151,3 +151,20 @@ Concepto nuevo en Java SE 8 y que es la base para que podamos escribir expresion
 
 Existe una nueva anotación denominada @FunctionalInterface que permite al compilador realizar la validación de que la interface tenga solamente un método abstracto
   
+
+## Programación funcional, paradigma de programación.
+
+### Paradigma declarativa vs imperativa
++ Imperativa: Estructurados, Procedimental, OOP, Otros
++ Declarativa: Funcional, Lógica, Otros
+
+### Programación Imperativa: Cómo?
++ Enfoque: delimitar todos los pasos para resolver el problema.
++ Programación funcional: Qué?
++ Enfoque: declarar qué está haciendo el programa
+
+Núcleo de la Programación funcional: funciones
+entrada dato -> función -> salida dato
+
+Funciones de orden superior, característica de programación funcional
+entrada como función -> función como operación -> salida como función
