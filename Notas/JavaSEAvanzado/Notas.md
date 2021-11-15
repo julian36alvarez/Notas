@@ -168,3 +168,7 @@ entrada dato -> función -> salida dato
 
 Funciones de orden superior, característica de programación funcional
 entrada como función -> función como operación -> salida como función
+
+
+![image](https://user-images.githubusercontent.com/31891276/141707098-fab69426-64e2-406e-87e2-7000516da369.png)
+
