@@ -143,3 +143,11 @@ Clases:
 ![image](https://user-images.githubusercontent.com/31891276/141702531-b8f5dd35-9a1f-4b10-a20e-08cec892e5d9.png)
 
 ![image](https://user-images.githubusercontent.com/31891276/141702538-c58fd7bc-8dcd-4166-bf23-4ec18e0ddb48.png)
+
+
+**Interfaces funcionales**
+
+Concepto nuevo en Java SE 8 y que es la base para que podamos escribir expresiones lambda. Una interface funcional se define como una interface que tiene uno y solo un método abstracto y que éste sea diferente a los métodos definidos en java.lang.Object (a saber: equals, hashcode, clone, etc.). La interface puede tener métodos por defecto y estáticos sin que esto afecte su condición de ser interface funcional.  
+
+Existe una nueva anotación denominada @FunctionalInterface que permite al compilador realizar la validación de que la interface tenga solamente un método abstracto
+  
