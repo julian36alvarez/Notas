@@ -173,5 +173,32 @@ entrada como función -> función como operación -> salida como función
 
 ![image](https://user-images.githubusercontent.com/31891276/141707098-fab69426-64e2-406e-87e2-7000516da369.png)
 
+## Tipos Lamba
 
+Existen 4 tipos de expresiones Lambda:
 
+Funciones (Function): Recibe como argumento dos parámetros de los cuales el primero T corresponde al tipo (objeto) de entrada y el segundo R como el tipo de salida de aquella operación.
+
+     Function<String, Integer> function = s -> s.length() + s.indexOf(" "); 
+     // 10 + 4?Integer result = function.apply("Hola mundo"); 
+     // Tiene 10 caracteres y el " " se ubica 										      
+     // en la posición 4.
+     
+Consumidores (Consumer): Un consumidor es aquella expresión que recibe un parámetro de entrada T pero que no retorna o genera ningún valor de salida. Son funciones terminales.
+
+     Consumer<String> consumer = s -> System.out.println(s.toLowerCase()); 
+     consumer.accept("Hola Mundo");
+     
+Proveedores (Supplier): Un proveedor es una expresión que no recibe parámetros de entrada pero que retornan o generan un tipo de salida T.
+
+    Supplier<String> supplier = () -> "Hola mundo"; 
+    supplier.get();
+    Salida: "Hola mundo"
+    
+Predicados (Predicate): Los predicados son expresiones que aceptan expresiones booleanas, es decir, condiciones lógicas.
+
+    Predicate<String> predicate = (str) -> str.length() > 6; 
+    predicate.test("Hola mundo");
+    Salida: true
+    
+    
