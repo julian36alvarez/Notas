@@ -46,3 +46,14 @@ En conclusión la Arquitectura de Diseño:
 + Organiza el código para trabajar en equipo.
 + Hace el código más intuitivo de leer y escribir.
 + Permite mantener, testear e integrar nuevos features más rápido y fácil.
+
+
+
+## elementos de SOLID Principles
+
+![image](https://user-images.githubusercontent.com/31891276/143285739-5faa00f2-6aae-4fdd-ac94-7feea2a63368.png)
+
+
++ L Liskov Substitution: Deberíamos poder usar una clase hija para sustituir a una clase padre sin obtener errores.
++ I Interface segregation: Si una interfaz crece demasiado pierde su objetivo y viola el primer principio.
++ D Dependency Inversion: Depende de una abstracción, no de algo concreto.
