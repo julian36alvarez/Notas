@@ -66,3 +66,7 @@ MVP (Model-View-Presenter): Separa las capas de modelo donde vamos a tener todas
 
 MVVM (Model-View-ViewModel): en la vista tenemos activities y/o fragments, despues en la capa de view model vamos a tener clases que funcionen en un hilo adicional de la aplicación para eso vamos a tener clases como : AsyncTask, Rxjava y LiveData. Y por ultimo esta la capa de model que aqui vamos a tener toda la interacción con una base de datos para conectarla y hacer que los datos lleguen a la user interface.
 Android Jetpack: Arquitectura de componentes(network resources)
+
+
+![image](https://user-images.githubusercontent.com/31891276/143492526-61bf3ff1-c333-45d0-a69b-dafca6813260.png)
+
