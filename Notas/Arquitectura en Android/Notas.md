@@ -57,3 +57,12 @@ En conclusión la Arquitectura de Diseño:
 + L Liskov Substitution: Deberíamos poder usar una clase hija para sustituir a una clase padre sin obtener errores.
 + I Interface segregation: Si una interfaz crece demasiado pierde su objetivo y viola el primer principio.
 + D Dependency Inversion: Depende de una abstracción, no de algo concreto.
+
+Evolución de arquitectura de Android.
+
+MVC (Model-View-Controller): Es donde teníamos todas las responsabilidades y todas las acciones de la aplicación en una sola clase, la clase activity (main.Activity).
+
+MVP (Model-View-Presenter): Separa las capas de modelo donde vamos a tener todas las conexiones. Después tenemos un presentador; es la capa donde mantiene la comunicación entre el modelo de datos y la user interface. Después esta arquitectura tuvo una evolución, donde se decidió que deberíamos seguir los principios de la arquitectura limpia, la cual nos dice que debemos exponer las entidades y que las entidades deben ser lo mas importante de la aplicación, mas allá de todas las capas que estén por debajo.
+
+MVVM (Model-View-ViewModel): en la vista tenemos activities y/o fragments, despues en la capa de view model vamos a tener clases que funcionen en un hilo adicional de la aplicación para eso vamos a tener clases como : AsyncTask, Rxjava y LiveData. Y por ultimo esta la capa de model que aqui vamos a tener toda la interacción con una base de datos para conectarla y hacer que los datos lleguen a la user interface.
+Android Jetpack: Arquitectura de componentes(network resources)
