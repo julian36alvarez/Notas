@@ -70,3 +70,12 @@ Android Jetpack: Arquitectura de componentes(network resources)
 
 ![image](https://user-images.githubusercontent.com/31891276/143492526-61bf3ff1-c333-45d0-a69b-dafca6813260.png)
 
+MVC fue la primera arquitectura con la cual empezó todo. Es importante conocerla en caso de que te encuentres con ella y sepas cómo migrar hacía una mejor arquitectura.
+
+El View se va a componer de nuestra interfaz: botones y campos de texto.
+
+El Controller será toda la lógica de negocio. Puede tener la lógica de lo que realizará un botón.
+
+Ambos elementos estarán definidos en un solo lugar.
+
+El Model tendrá la conexión a una base de datos o una API
