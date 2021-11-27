@@ -143,3 +143,21 @@ En general la arquitectura MVVM es diferente a MVP porque en esta arquitectura v
 
 ### Data Binding:
 Android Data Binding es una biblioteca de soporte que nos permite vincular los componentes de la interfaz de usuario a las fuentes de datos de forma declarativa en lugar de mediante programación, es potencialmente realmente potente y complejo, pero si se usa de manera efectiva, puede reducir la capacidad de presentación.
+
+
+## Android JetPack es lo nuevo para desarrollar aplicaciones android. 
+
+Es la nueva forma de acelerar el desarrollo de aplicaciones con componentes para modularizar las partes claves del proyecto.
+
+Crea de forma más rápida y sencilla aplicaciones de alta calidad y testeables.
+
+AndroidX es la evolución de Android Support. Esta siendo actualizada progresivamente y tendrá soporte para versiones anteriores.
+
+Android JetPack adoptó la arquitectura MVVM (Model-View-ViewModel)
+
+Componentes de Android JetPack:
+
++ Base
++ Comportamiento
++ Arquitectura: Tiene cuatro elementos: Room, Lifecycle, LiveData, ViewModel.
++ UI
