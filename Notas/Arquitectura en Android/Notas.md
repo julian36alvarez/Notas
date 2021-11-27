@@ -139,3 +139,7 @@ Como ves hasta el momento nuestro proyecto ha tratado de seguir las reglas Clean
 ##  arquitectura MVVM.
 
 En general la arquitectura MVVM es diferente a MVP porque en esta arquitectura vamos a necesitar que los datos se estén manejando de una forma más automatizada y mucho más real time. Podemos usar varias versiones MVVM, una de ellas es data binding que es de las más antiguas y existen en muchos otros frameworks como .NET de Microsoft. También tenemos a Live data y RxJava o RxAndroid que son características de la programación reactiva que podemos utilizar para hacer la actualización de datos en tiempo real.
+
+
+### Data Binding:
+Android Data Binding es una biblioteca de soporte que nos permite vincular los componentes de la interfaz de usuario a las fuentes de datos de forma declarativa en lugar de mediante programación, es potencialmente realmente potente y complejo, pero si se usa de manera efectiva, puede reducir la capacidad de presentación.
