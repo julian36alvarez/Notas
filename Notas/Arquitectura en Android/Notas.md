@@ -136,3 +136,6 @@ En realidad nosotros en este punto ya tenemos experiencia con la separación de 
 
 Como ves hasta el momento nuestro proyecto ha tratado de seguir las reglas Clean Architecture, estas tendrán sus propias variaciones dependiendo de la Arquitectura aplicada, pero en general esto es lo que marca una Arquitectura limpia en el software.
 
+##  arquitectura MVVM.
+
+En general la arquitectura MVVM es diferente a MVP porque en esta arquitectura vamos a necesitar que los datos se estén manejando de una forma más automatizada y mucho más real time. Podemos usar varias versiones MVVM, una de ellas es data binding que es de las más antiguas y existen en muchos otros frameworks como .NET de Microsoft. También tenemos a Live data y RxJava o RxAndroid que son características de la programación reactiva que podemos utilizar para hacer la actualización de datos en tiempo real.
