@@ -36,3 +36,10 @@
 ![imagen](https://user-images.githubusercontent.com/31891276/144160603-86f0be4d-12b9-468b-8a7a-ed0ee3bd5576.png)
 
 
+## Present Perfect Simple
+
++ I have just lost my umbrella
++ Have you washed your hair yet? I have just washed it
++ I haven’t told her about the accident yet
++ Have you been to Vienna yet?
++ Oh... I have just forgotten her address.
