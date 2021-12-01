@@ -79,3 +79,15 @@
 + There may soon come a time when all work is done by machines.
 + That is not the girl whose brother won the prize last week.
 + Where is the car which they stole the last nigth? 
+
+## Past Simple and Past Continous
+
+I was running in the park last year when my mom called to let me know that she had won the lottery.
+
+I was watching tv when my dog destroyed the chair.
+
+We were playing soccer when you called.
+
+I was walking with my dog when I found one dollar.
+
+My Wife was eating a dessert when I proposed marriage.
