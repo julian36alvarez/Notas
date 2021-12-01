@@ -51,4 +51,15 @@
 
 ![imagen](https://user-images.githubusercontent.com/31891276/144166031-7d467ec0-ea86-4299-990d-03122a08d852.png)
 
+## Past Simple And Past Continuous.
 
++ Susan went shopping yesterday.
++ They have painted this room two times this month. It looks great.
++ Last summer Mary visited Berlin with her family.
++ The children haven’t done their homework.
++ Were we eat snails on our last holiday?.
++ She hasn’t been abroad before.
++ I’m sorry, but I have just forgotten my password.
++ I have sent you an email two days ago.
++ He hasn’t called me yet.
++ My parents weren't at home yesterday.
