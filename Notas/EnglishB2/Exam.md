@@ -51,7 +51,7 @@
 
 ![imagen](https://user-images.githubusercontent.com/31891276/144166031-7d467ec0-ea86-4299-990d-03122a08d852.png)
 
-## Past Simple And Past Continuous.
+## Past Perfect Simple or past simple
 
 + Susan went shopping yesterday.
 + They have painted this room two times this month. It looks great.
