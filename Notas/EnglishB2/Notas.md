@@ -67,3 +67,15 @@ If I don't have breakfast.
 
 ![imagen](https://user-images.githubusercontent.com/31891276/141107750-7f8523a6-1900-48fd-97ac-2b7734077520.png)
 
+
++ Susan went shopping yesterday.
++ They have painted this room two times this month. It looks great.
++ Last summer Mary visited Berlin with her family.
++ The children haven’t done their homework.
++ Were we eat snails on our last holiday?.
++ She hasn’t been abroad before.
++ I’m sorry, but I have just forgotten my password.
++ I have sent you an email two days ago.
++ He hasn’t called me yet.
++ My parents weren't at home yesterday.
+
