@@ -46,3 +46,6 @@
 
 
 ![imagen](https://user-images.githubusercontent.com/31891276/144162147-a4c4964c-bccf-45fc-be41-aa7978b09e8b.png)
+
+![imagen](https://user-images.githubusercontent.com/31891276/144165856-5afcce98-5afc-4617-830f-a7e75f327c94.png)
+
