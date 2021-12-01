@@ -67,3 +67,15 @@
 ![imagen](https://user-images.githubusercontent.com/31891276/144168011-85bb7dc6-7f46-4264-a999-eb74cd5fcbf3.png)
 
 
+## Defining relative clauses
+
++ 1964 was the year when my mother started her career.
++ 6 am was the time which we all had to bed out of bed.
++ A carpenter is a person who works with wood.
++ Can you tell me the reason which I have to write it?.
++ I want you to buy the computer which has a CD ROM.
++ Is that the old man which had this car stolen last week?
++ There is a woman whose daughter is a lawyer.
++ There may soon come a time when all work is done by machines.
++ That is not the girl whose brother won the prize last week.
++ Where is the car which they stole the last nigth? 
