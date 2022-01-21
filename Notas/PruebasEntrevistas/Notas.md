@@ -89,3 +89,25 @@ public static void main (String args[]) {
 
 ![image](https://user-images.githubusercontent.com/31891276/150460031-5ea73ce0-e34b-4c77-a9a9-d45f8412f3b3.png)
 
+![image](https://user-images.githubusercontent.com/31891276/150460133-2a914c2f-1b2c-4a15-a1c1-7a48f34024bc.png)
+
+
+## Mopver la X dentro de la matriz no me salio bien este solo es una demo
+
+
+        public class Matrix4x4 {
+            static int[] myArray = {1,2,-1,1,0,1,2,-1,-1,-2};
+            public static void main(String[] args) {
+                int cantidad = 4;
+                int[][]arreglo = new int[cantidad][cantidad];
+
+                for ( int i=0; i < arreglo.length ;i++){
+                    for (int j=0;  j<arreglo.length;j++){
+                        int x = i + 1;
+                            System.out.print("O");
+                    }
+                    System.out.println();
+                }
+            }
+        }
+
