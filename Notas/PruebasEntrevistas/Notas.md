@@ -34,6 +34,12 @@ myArray.sort();
 
 ![image](https://user-images.githubusercontent.com/31891276/150455561-258d38e9-caf3-4b5b-b1d4-b6592cac5523.png)
 
+![image](https://user-images.githubusercontent.com/31891276/150459402-e193d45f-680a-4c4d-a060-b2c7ac5a559c.png)
+
+![image](https://user-images.githubusercontent.com/31891276/150459447-d988ad0b-51bf-4e1a-b95c-4bedd82f7013.png)
+
+
+
     static int[] myArray = {13,2,4,35,1};
     public static void main (String args[]) {
         int max =  Arrays.stream(myArray).max().getAsInt();
@@ -56,6 +62,12 @@ NO estoy seguro
 
 ![image](https://user-images.githubusercontent.com/31891276/150457894-28407785-e41f-43df-9395-b676bb1bfc4f.png)
 
+![image](https://user-images.githubusercontent.com/31891276/150459698-361d3e1d-e0f6-4f1b-85fa-1888efc2d4ce.png)
+
+![image](https://user-images.githubusercontent.com/31891276/150459880-c3334792-6b0c-4b7e-ae0d-98d9c889fdee.png)
+
+
+
 static int[] myArray = {1,3,4,2,7,0};
 
 public static void main (String args[]) {
@@ -70,3 +82,4 @@ public static void main (String args[]) {
         }
 }
 
+![Uploading image.png…]()
