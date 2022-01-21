@@ -44,5 +44,29 @@ myArray.sort();
 
 ![image](https://user-images.githubusercontent.com/31891276/150455970-fd4de402-7591-4210-a4f4-c46eaf3d23ab.png)
 
+![image](https://user-images.githubusercontent.com/31891276/150456131-ec93e495-830c-4063-bb68-5b0591087b0a.png)
 
+![image](https://user-images.githubusercontent.com/31891276/150456236-8a455f2a-f14d-4be8-8b2e-174e80bf07ba.png)
+
+![image](https://user-images.githubusercontent.com/31891276/150456825-ab725ffc-34fe-4969-b4b8-309a455a0728.png)
+
+NO estoy seguro
+
+![image](https://user-images.githubusercontent.com/31891276/150456932-da386c46-139d-4745-ab95-e43d125a0ab0.png)
+
+![image](https://user-images.githubusercontent.com/31891276/150457894-28407785-e41f-43df-9395-b676bb1bfc4f.png)
+
+static int[] myArray = {1,3,4,2,7,0};
+
+public static void main (String args[]) {
+   for(int i=0; i<myArray.length-1; i++){
+            for(int j=1;j<myArray.length;j++){
+                if(myArray[i]+myArray[j]==10){
+                    System.out.println(myArray[i]+" "+myArray[j]);
+                    j=myArray.length+1;
+                    i=myArray.length+1;
+                }
+            }
+        }
+}
 
