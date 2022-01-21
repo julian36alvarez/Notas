@@ -82,4 +82,10 @@ public static void main (String args[]) {
         }
 }
 
-![Uploading image.png…]()
+
+![image](https://user-images.githubusercontent.com/31891276/150459947-485a264f-50dd-427d-bfe3-fe16a4460299.png)
+
+
+
+![image](https://user-images.githubusercontent.com/31891276/150460031-5ea73ce0-e34b-4c77-a9a9-d45f8412f3b3.png)
+
