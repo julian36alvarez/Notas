@@ -8,3 +8,6 @@ Normas apa
 
 
 ![image](https://user-images.githubusercontent.com/31891276/155848892-fc9f3951-2056-47ac-970b-6ec253abbaed.png)
+
+
+![image](https://user-images.githubusercontent.com/31891276/155849395-8a4899e1-4caf-4246-aafa-7a9b9d61b6cd.png)
