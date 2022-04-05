@@ -45,6 +45,27 @@ https://docs.spring.io/spring-boot/docs/current/reference/html/application-prope
 
 ## Arquitectura por capas orientada al Dominio
 
+La arquitectura es por capas
+
+La arquitectura basada en capas se enfoca en la distribución de roles y responsabilidades de forma jerárquica conformando una forma muy efectiva de separación de responsabilidades.
+
+Orientada al dominio
+
+La primera capa esta todo el contexto
+los servicios que serian como un puente entre los controladores de la api y la capa de persistencia
+
+especificacion del los repositorios
+
+son interfaces que rigen las reglas del juego o los contratos que debe cumplir la persistencia la intervenir entre los objetos de dominio y la base de datos
+
+CAPA WEB
+
+Controladores de API rest.
+
+PERSISTENCIA
+
+tiene todos los repositorios o entities
+
 ![image](https://user-images.githubusercontent.com/31891276/135947824-bf3fd7a2-ae4b-4099-9727-3201f0abd875.png)
 
 # JPA
