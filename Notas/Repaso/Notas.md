@@ -28,7 +28,7 @@ Patrón con el cual dividimos nuestro modelo de objetos en dos, un modelo para c
 
 # Pruebas
 
-    + Pruebas de Carga.
+## Pruebas de Carga.
 
     Para evaludar el rendimiento de la aplicacion, y saber que tanta concurrencia soporta.
 
