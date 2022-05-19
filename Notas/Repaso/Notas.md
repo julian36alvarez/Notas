@@ -48,7 +48,8 @@ Patrón con el cual dividimos nuestro modelo de objetos en dos, un modelo para c
 
 ## Patrón triple A.
 
-Es un patrón que sugiere cómo se debería estructurar el código de una prueba unitaria, su nombre se deriva de un acrónimo para preparación, acción y verificación (Arrange, Act, Assert) por sus siglas en inglés.
+Es un patrón que sugiere cómo se debería estructurar el código de una prueba unitaria, su nombre se deriva de un acrónimo para:
+**preparación**, **acción** y **verificación** (Arrange, Act, Assert) por sus siglas en inglés.
 
 ## Pruebas Unitarias.
 
