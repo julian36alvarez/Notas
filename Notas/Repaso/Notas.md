@@ -86,3 +86,19 @@ CORS: Control de accesos http: los navegadores usan un mecanismo de seguridad en
 
 
 ## Esctructura de las pruebas Angular.
+
+
+Usamos **describe** para poner una descripción al grupo de tests que vamos a realizar, sobre todo para organizar los tests y que sea posible hacer seguimiento. 
+
+Con el **it** vamos a establecer un test en particular. En este caso, el test que se realiza es que el componente se debe crear. Simplemente es un test que se genera de forma automática cuando generamos el componente.
+
+Por último, usamos **expect** para definir cómo debe funcionar este test en concreto, en este caso, que es uno de los más simples, tan solo se comprueba que el componente se ha generado.
+
+
+Además, fijaos que disponemos de varios Callbacks que nos permiten realizar operaciones antes y después de ejecutar los tests, sobre todo para realizar la creación y la eliminación de los registros que vamos a usar durante los tests. Estos Callbacks son los siguientes:  
+
+
++ beforeAll() => Se ejecuta antes de realizar todos los tests.
++ afterAll() => Se ejecuta después de finalizar los tests de la suite.
++ beforeEach() => Se ejecuta antes de cada uno de los tests individuales.
++ afterEach() => Se ejecuta al finalizar
