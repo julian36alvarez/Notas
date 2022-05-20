@@ -60,11 +60,23 @@ Los archivos de la aplicacion se encuentran en la subcarpeta src. Las pruebas in
 
 El proyecto base esta estructurado en los modulos feature, shared y core. Asegurando una separacion adecuada de las preocupaciones, lo que facilitara la escalabilidad a medida que su aplicacion crezca. Lo siguiente describe brevemente cada tipo de modulo.
 
+### AppModule: 
+es el módulo principal de la aplicación, responsable de su arranque y de la combinación de otros módulos.
+
 ### Modulo core
-Deben estar lo transversal y de una sola instancia en la aplicacion. Por ejemplo: NavBar o interceptor.
+Deben estar lo transversal y de una sola instancia en la aplicacion. Por ejemplo: NavBar o interceptor. es decir que se utilizarán en toda la aplicación a nivel global
 
 ### Modulo feature
 Deben estar los componentes que implementan funcionalidades especificas de la aplicacion. Por ejemplo, el componente datos de contacto el cual es el componente que implementa la feature de contacto. Es posible tener compartidos dentro de esta feature.
 
++ Crearemos múltiples módulos de funcionalidades para cada característica independiente de nuestra aplicación.
+
 ### Modulo shared
 Deben estar componentes o utilidades comunes a las diferentes feature. Por ejemplo, un componente de un boton azul que usted desea repetir en varios lugares. Un filtro para ser utilizado en todos los componentes.
+
+
++ Servicio: proporciona servicios de utilidad tales como acceso a datos y mensajería.
++ Carga diferida:  
+Para evitar posibles problemas de rendimiento en la carga de la aplicación, se hará uso del patrón carga diferida (Lazy-Loading (opens new window)), capacidad incorporada en Angular y que permite aplazar la carga de una parte particular de la aplicación hasta que sea realmente necesaria.
+
+![image](https://user-images.githubusercontent.com/31891276/169514533-5c14fdbd-c499-48a7-aba4-27c195645ed4.png)
