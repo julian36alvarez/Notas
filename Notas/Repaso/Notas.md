@@ -80,3 +80,6 @@ Deben estar componentes o utilidades comunes a las diferentes feature. Por ejemp
 Para evitar posibles problemas de rendimiento en la carga de la aplicación, se hará uso del patrón carga diferida (Lazy-Loading (opens new window)), capacidad incorporada en Angular y que permite aplazar la carga de una parte particular de la aplicación hasta que sea realmente necesaria.
 
 ![image](https://user-images.githubusercontent.com/31891276/169514533-5c14fdbd-c499-48a7-aba4-27c195645ed4.png)
+
+
+CORS: Control de accesos http: los navegadores usan un mecanismo de seguridad en las cabeceras, el endopoint establece las politicas
