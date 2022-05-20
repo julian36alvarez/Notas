@@ -36,13 +36,10 @@ Para evaludar el rendimiento de la aplicacion, y saber que tanta concurrencia so
 
 Indica el número de usuarios concurrentes con los cuales se realizará la prueba
 
-++ Ramp-Up (in seconds): 
++Ramp-Up (in seconds): 
     Sirve para realizar pruebas con concurrencia escalonada, es decir luego de cuántos segundos los n usuarios estarán realizando peticiones al mismo tiempo.
-
-    ++ Duration (seconds): 
-
-    Tiempo en segundos que durará la prueba
-
+ +Duration (seconds): 
+ +Tiempo en segundos que durará la prueba  
     Siendo así la prueba de carga se realizará con 5 usuarios concurrentes durante 60 segundos, los 5 usuarios realizarán peticiones concurrentes a partir del segundo 30, antes de los 30 segundos se realizarán de forma escalonada es decir primero 1 usuario, luego 2 etc.
 
 
