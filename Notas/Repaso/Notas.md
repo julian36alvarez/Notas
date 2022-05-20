@@ -82,4 +82,7 @@ Para evitar posibles problemas de rendimiento en la carga de la aplicación, se 
 ![image](https://user-images.githubusercontent.com/31891276/169514533-5c14fdbd-c499-48a7-aba4-27c195645ed4.png)
 
 
-CORS: Control de accesos http: los navegadores usan un mecanismo de seguridad en las cabeceras, el endopoint establece las politicas
+CORS: Control de accesos http: los navegadores usan un mecanismo de seguridad en las cabeceras, el endopoint establece las politicas.
+
+
+## Esctructura de las pruebas Angular.
