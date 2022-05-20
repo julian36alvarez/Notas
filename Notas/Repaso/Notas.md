@@ -28,28 +28,27 @@ Patrón con el cual dividimos nuestro modelo de objetos en dos, un modelo para c
 
 # Pruebas
 
-## Pruebas de Carga.
+++ Pruebas de Carga.
 
-    Para evaludar el rendimiento de la aplicacion, y saber que tanta concurrencia soporta.
+Para evaludar el rendimiento de la aplicacion, y saber que tanta concurrencia soporta.
 
-    + Number of thread (users):  
+++ Number of thread (users):  
 
-    Indica el número de usuarios concurrentes con los cuales se realizará la prueba
+Indica el número de usuarios concurrentes con los cuales se realizará la prueba
 
-    + Ramp-Up (in seconds): 
+++ Ramp-Up (in seconds): 
     Sirve para realizar pruebas con concurrencia escalonada, es decir luego de cuántos segundos los n usuarios estarán realizando peticiones al mismo tiempo.
 
-    + Duration (seconds): 
+    ++ Duration (seconds): 
 
     Tiempo en segundos que durará la prueba
 
     Siendo así la prueba de carga se realizará con 5 usuarios concurrentes durante 60 segundos, los 5 usuarios realizarán peticiones concurrentes a partir del segundo 30, antes de los 30 segundos se realizarán de forma escalonada es decir primero 1 usuario, luego 2 etc.
 
 
-## Patrón triple A.
+## Patrón triple A
 
-Es un patrón que sugiere cómo se debería estructurar el código de una prueba unitaria, su nombre se deriva de un acrónimo para:
-**preparación**, **acción** y **verificación** (Arrange, Act, Assert) por sus siglas en inglés.
+Es un patrón que sugiere cómo se debería estructurar el código de una prueba unitaria, su nombre se deriva de un acrónimo para preparación, acción y verificación (Arrange, Act, Assert) por sus siglas en inglés.
 
 ## Pruebas Unitarias.
 
@@ -59,4 +58,19 @@ Las pruebas unitarias se encargan de validar unidades pequeñas de código(por e
 
 Las pruebas de integración son posteriores a la Pruebas Unitarias y están enfocadas en probar cómo es la interacción entre los diferentes módulos del software, como interacciones entre componentes o bases de datos.
 
+# ANGULAR
 
+## Estructura del proyecto
+
+Los archivos de la aplicacion se encuentran en la subcarpeta src. Las pruebas iniciales correspondientes de extremo a extremo se encuentran en la subcarpeta e2e.
+
+El proyecto base esta estructurado en los modulos feature, shared y core. Asegurando una separacion adecuada de las preocupaciones, lo que facilitara la escalabilidad a medida que su aplicacion crezca. Lo siguiente describe brevemente cada tipo de modulo.
+
+### Modulo core
+Deben estar lo transversal y de una sola instancia en la aplicacion. Por ejemplo: NavBar o interceptor.
+
+### Modulo feature
+Deben estar los componentes que implementan funcionalidades especificas de la aplicacion. Por ejemplo, el componente datos de contacto el cual es el componente que implementa la feature de contacto. Es posible tener compartidos dentro de esta feature.
+
+### Modulo shared
+Deben estar componentes o utilidades comunes a las diferentes feature. Por ejemplo, un componente de un boton azul que usted desea repetir en varios lugares. Un filtro para ser utilizado en todos los componentes.
