@@ -119,4 +119,15 @@ verificar el número exacto de ejecuciones de un método.
     expect(obj.method.callCount).toBe(2);
 
 
+## HTTPClienteTestingModule.
+
+HTTPTestingControler: Controlador que nos permite manipular el http client, quiere decir que nustras pruebas usan la instancia HTTPTestingControler y no la real que es HttpClient real.
+
+# Protractor
+dos archivos para definir las pruebas.
+
++ po.ts Generador de herramientas.  
+      Importa browser , genera una url  
++ e2e-spect Ejecutor de las pruebas.
+
 
