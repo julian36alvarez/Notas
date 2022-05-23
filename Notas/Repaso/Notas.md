@@ -102,3 +102,21 @@ Además, fijaos que disponemos de varios Callbacks que nos permiten realizar ope
 + afterAll() => Se ejecuta después de finalizar los tests de la suite.
 + beforeEach() => Se ejecuta antes de cada uno de los tests individuales.
 + afterEach() => Se ejecuta al finalizar
+
+## SpyOn
+
+
+Espia para los objtos, en este caso al servicio
+
+    spyOn(obj, 'method') // obj.method es el metodo que se va a espiar.  
+
+Cambiar el valor retornado por un método.
+
+    spyOn(obj, 'method').andReturn('value');
+    
+verificar el número exacto de ejecuciones de un método.
+
+    expect(obj.method.callCount).toBe(2);
+
+
+
