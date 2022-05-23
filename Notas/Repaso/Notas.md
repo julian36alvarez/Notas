@@ -132,3 +132,7 @@ dos archivos para definir las pruebas.
 
 Protractor browsin -> permite navegar.
 
+
+ASync ->
+
+await ->
