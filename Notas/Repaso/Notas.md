@@ -130,4 +130,5 @@ dos archivos para definir las pruebas.
       Importa browser , genera una url  
 + e2e-spect Ejecutor de las pruebas.
 
+Protractor browsin -> permite navegar.
 
