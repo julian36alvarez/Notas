@@ -141,4 +141,12 @@ What do you think is the most challenging aspect of this position?
 Are there opportunities for professional growth?
 
 
+thanks for having me
+Thanks this is exciting.
+Sure, I studied systems engineering at university.
 
+systems engineer.
+
+Well, my first experience was in PHP, HTML, Javascript, and CSS, but a couple of years.
+
+I was want be full-stack
